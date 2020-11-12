@@ -1,0 +1,11 @@
+Now it's your turn! Create a portfolio website of your own from scratch.
+
+Complete the following tasks
+Please make sure you do each of the following in your final project 
+
+1)Choose a new background image
+2)Change the title and copy
+3)Use your own color palette
+4)Choose at least 1 Google Font
+5)Include a video embed from YouTube
+6)Include a link "Made @ One Month"
