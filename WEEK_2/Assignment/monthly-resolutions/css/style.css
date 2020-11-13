@@ -1,0 +1,156 @@
+/* 
+Project Name: Monthly Resolutions
+Client: One Month
+Author: Christopher Castig | @castig
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+body {
+	background: url('../images/notebook.png');
+	line-height: 1.7; /* line-height is unit-less */
+	font-size: 100%;
+}
+
+h2 {
+	font-family: 'lato', sans-serif;
+
+}
+
+blockquote {
+	font-style: italic;
+	margin-left: 0;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: grey;
+    padding-left: 10px;
+    
+}
+
+h3 {
+	font-family: 'lato', sans-serif;
+	font-size: 20px;
+
+}
+
+/*p {
+	font-family: lato, sans-serif; 
+} */
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+.removespacebottom {
+	margin-bottom: 0px;
+	display: flex;
+}
+
+.removespacetop {
+	margin-top: : -20px;
+}
+
+.displayoff {
+	display: flex;
+}
+
+.textbsst {
+	font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+.footerimg {
+	font-size: 17px;
+}
+
+.footerhr {
+	line-height: 5px;
+	color:grey;
+	font-size: 11px;
+}
+
+.imagecrop {
+	border-radius: 75px;
+}
+.links {
+	color: #de3e21;
+}
+
+.sidebartext{
+	font-size: 15px;
+	font-family: lato, sans-serif;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+#container {
+	width: 1000px;
+	margin: auto;
+	align-content: center;
+	padding-top: 20px;
+	
+}
+
+#header {
+font-size: 20px;
+font-family: lato, sans-serif;
+line-height: 10px;
+padding-bottom: 20px;
+
+}
+
+#footer {
+	font-size: 16px;
+	font-family: lato, sans-serif;
+	padding-bottom: 20px;
+}
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+#main1 {
+	width: 625px;
+	background-color: #fcfcfc;
+	padding: 30px;
+	float: left;	
+}
+
+#sidebar {
+	background: #fcfcfc;
+	width: 365px;
+	float: right;
+	padding: 30px;
+	border-left: 1px grey solid;
+	border-bottom: 1px grey solid;
+}
+
+#main2 {
+	width: 625px;
+	background-color: #fcfcfc;
+	padding: 30px;
+
+}
+
+#main3 {
+	width: 625px;
+	background-color: #fcfcfc;
+	padding: 30px;
+
+}
+
+/*----------------------------------------------------------------------------- 
+04=Sidebar  
+-----------------------------------------------------------------------------*/
