@@ -76,11 +76,14 @@ iframe {
   margin: 6.25rem auto;
   background: #FFF;
   border-radius: 1.25rem 1.25rem 0 0;
-
+  
+/* Nth Child Code Example
 }
 section:nth-child(2n) {  
   background-color: red;
 }
+*/
+
 /*
  * Section Styles
 */
