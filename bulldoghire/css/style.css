@@ -36,36 +36,31 @@ body {
 -----------------------------------------------------------------------------*/
 
 #container {
+
 		background-color: #ff7e0c;
 		position: center;
 		border-top-left-radius: 10px;
         border-top-right-radius: 10px;
 		text-align: center; 
-  		width: 1440px;
+  		width: fit-content;
   		margin:  0 auto 0 auto;
     	
 }
 
+
+
 #left-column {
-   height: 500px;
+   height: 100;
 
 }
 
 #middle-column {
-    height: 500px;
+    height: 100px;
 
 }
-
-#middle-column img {
-
-    margin-top: 60px;
-   margin-left: auto ;
-   margin-right: auto;
-}
-
 
 #right-column {
-    height: 500px;
+    height: 100px;
     
 }
 
@@ -87,6 +82,8 @@ h2 {    background-color: #ff7e0c;
         font-family: 'Bebas Neue', cursive; 
 
 }
+
+
 .center {
     position: center;
     max-width:  100%;
@@ -105,6 +102,14 @@ h2 {    background-color: #ff7e0c;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
+.banner {
+
+    background-color: #121212;
+    width: 100%;
+}
+
+
 
 /* Create three unequal columns that floats next to each other */
 .column {
@@ -156,3 +161,15 @@ a:hover { color: green;
           text-decoration: none;}
 a:active { color:black; 
            text-decoration: none;}
+
+@media (min-width: 1400px) {
+    #container, body {
+        width: 1360px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+
+    .banner img {
+        height: 300px;
+    }
+}
