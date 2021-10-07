@@ -149,19 +149,34 @@ h2 {    background-color: #ff7e0c;
   clear: left;
 }
 
+
+
 /*----------------------------------------------------------------------------- 
 10 - Link editing   
 -----------------------------------------------------------------------------*/
 
-a:link { color: crimson; 
+a:link { color: #ff7e0c; 
          text-decoration: none;}
-a:visited { color: black; 
+a:visited { color: #121212; 
             text-decoration: none;}
-a:hover { color: green; 
+a:hover { color: #ff7e0c; 
           text-decoration: none;}
-a:active { color:black; 
+a:active { color:#121212; 
            text-decoration: none;}
 
+.button {
+  
+  background: #fdfdfd;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid #121212;
+  border-radius: 2px;
+  width: 50%;
+  margin: 0 auto;
+
+}
 @media (min-width: 1400px) {
     #container, body {
         width: 1360px;
