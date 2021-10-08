@@ -181,10 +181,11 @@ section .buttons {
   font-size: 32px;
   display: inline-block;
   padding: 20px;
-  margin:  5px;
-  width: 150px;
+  margin:  10px;
+  width: 252px;
   border: 1px solid #121212;
   border-radius: 4px;
+  box-sizing: border-box;
   transition: all 0.2s;
   cursor: pointer;
 
@@ -240,4 +241,32 @@ a:active { color:#121212;
     .banner img {
         height: 300px;
     }
+ 
+
+}
+
+@media (max-width: 1000px) {
+    #container, body {
+        width: 960px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+
+    .banner img {
+        height: 280px;
+    }
+
+    .button {
+
+  text-align: center;
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px;
+  margin:  5px;
+  width: 181px;
+ 
+
+}
+
+}
 }
