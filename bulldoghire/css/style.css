@@ -31,6 +31,8 @@ body {
        margin:  0 auto 0 auto;
 }
 
+
+
 /*----------------------------------------------------------------------------- 
 02=Middle   
 -----------------------------------------------------------------------------*/
@@ -68,7 +70,7 @@ body {
 
 
 h1 {    font-size: 15px;
-        padding: 10px
+        padding: 8px
 
 
 }
@@ -89,6 +91,36 @@ section .buttons {
 
     
 }
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 48px;
+  width: 48px;
+}
+
+.img__description {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width:  48px;
+  margin-top: 6px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fdfdfd50;
+  color: #121212;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
 
 .link {
 
@@ -102,12 +134,6 @@ section .buttons {
   transition: 0.2s;
 }
 
-.center {
-    position: center;
-    max-width:  100%;
-    padding: 0px;
-}
-
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -115,6 +141,11 @@ section .buttons {
   padding: 3px;
 }
 
+.center {
+    position: center;
+    max-width:  100%;
+    padding: 0px;
+}
 
 .left {
   transform: rotate(135deg);
