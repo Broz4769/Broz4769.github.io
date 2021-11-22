@@ -70,7 +70,8 @@ body {
 
 
 h1 {    font-size: 15px;
-        padding: 8px
+        padding: 8px;
+        color: #121212;
 
 
 }
@@ -92,16 +93,18 @@ section .buttons {
     
 }
 /* relevant styles */
-.img__wrap {
+.img__wrap_left {
   position: relative;
+  float:  left;
   height: 48px;
   width: 48px;
 }
 
+
 .img__description {
   position: absolute;
   text-align: center;
-  height: 48px;
+  height: 36px;
   width:  48px;
   margin-top: 6px;
   top: 0;
@@ -117,7 +120,7 @@ section .buttons {
   transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap:hover .img__description {
+.img__wrap_left:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
@@ -140,6 +143,9 @@ section .buttons {
   display: inline-block;
   padding: 3px;
 }
+
+
+
 
 .center {
     position: center;
@@ -252,7 +258,6 @@ section .buttons {
 /*----------------------------------------------------------------------------- 
 10 - Link editing   
 -----------------------------------------------------------------------------*/
-
 a:link { color: #ff7e0c; 
          text-decoration: none;}
 a:visited { color: #121212; 
@@ -261,6 +266,8 @@ a:hover { color: #ff7e0c;
           text-decoration: none;}
 a:active { color:#121212; 
            text-decoration: none;}
+
+
 
 @media (min-width: 1400px) {
     #container, body {
