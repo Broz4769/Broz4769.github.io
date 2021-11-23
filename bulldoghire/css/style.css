@@ -122,7 +122,7 @@ section .buttons {
 
 .img__wrap_left:hover .img__description {
   visibility: visible;
-  opacity: 1;
+  opacity: 1.5;
 }
 
 .link {
@@ -143,8 +143,6 @@ section .buttons {
   display: inline-block;
   padding: 3px;
 }
-
-
 
 
 .center {
