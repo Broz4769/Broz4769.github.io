@@ -108,6 +108,7 @@ section .buttons {
   height: 36px;
   width:  48px;
   margin-top: 6px;
+  font-size: 20px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -259,7 +260,7 @@ section .buttons {
 /*----------------------------------------------------------------------------- 
 10 - Link editing   
 -----------------------------------------------------------------------------*/
-a:link { color: #ff7e0c; 
+a:link { color: #121212; 
          text-decoration: none;}
 a:visited { color: #121212; 
             text-decoration: none;}
