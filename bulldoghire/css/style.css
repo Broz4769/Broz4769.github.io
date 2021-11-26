@@ -80,12 +80,25 @@ h2 {    background-color: #ff7e0c;
         padding-top: 10px;
         padding-left: 50px;
         padding-bottom: 0px;
-        color:  black;
+        color:  #121212;
         font-size: 42px;
         width:  auto;
         border-radius: 0px;
         font-family: 'Oswald', sans-serif; 
 
+}
+
+h3 {
+    background-color: #ff7e0c;
+    color: #121212;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -289,6 +302,68 @@ h2 {    background-color: #ff7e0c;
 
 }
 
+/*----------------------------------------------------------------------------- 
+6 -Gallery /Slideshow   
+-----------------------------------------------------------------------------*/
+.gallery-content {
+    position: relative;
+    margin: auto;
+    background-color: #ff7e0c;
+    width: 90%;
+    max-height: 600px;
+    padding-bottom: 20px;
+}
+
+.gallery-content img {
+    position: center;
+    margin: auto;
+    max-width: 80%;
+    max-height: 600px;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.gallery-button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:#fdfdfd;
+    background-color:black;
+    text-align:center;
+    cursor: pointer;
+    white-space:normal;
+
+}
+
+.gallery-display-left {
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+}
+
+.gallery-display-right {
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
+}
+
+/*----------------------------------------------------------------------------- 
+7 -Footer   
+-----------------------------------------------------------------------------*/
+
+.footer {
+    height: 200px;
+    background-color: #121212;
+}
 
 
 /*----------------------------------------------------------------------------- 
