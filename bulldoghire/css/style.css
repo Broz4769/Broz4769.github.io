@@ -369,7 +369,7 @@ h3 {
 /*----------------------------------------------------------------------------- 
 10 - Link editing   
 -----------------------------------------------------------------------------*/
-a:link { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
+a:link { color: #121212; /* orange colour rgba(255, 126, 12, 1)*/
          text-decoration: none;}
 a:visited { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
             text-decoration: none;}
