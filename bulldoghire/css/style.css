@@ -308,6 +308,7 @@ h3 {
 .gallery-content {
     position: relative;
     margin: auto;
+    padding-top: 20px;
     background-color: #ff7e0c;
     width: 90%;
     max-height: 500px;
