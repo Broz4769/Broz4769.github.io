@@ -474,7 +474,7 @@ a:active { color:#121212;
     }
 
     h3  {
-        font-size: 12px; ;
+        font-size: 13px; ;
     }
 
     .banner img {
@@ -491,11 +491,16 @@ a:active { color:#121212;
     .dropdown-content {
         max-width: 134px;
         font-size: 13px;
-  
     }
     .gallery-content img {
-    max-width: 80%;
+    max-width: 70%;
     max-height: 300px;
+    }
+    .gallery-display-left {
+    left:7.5%;
+    }
+    .gallery-display-right {
+    right:7.5%;
     }
     .footer {
         font-size: 12px;
