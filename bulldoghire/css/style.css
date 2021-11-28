@@ -474,7 +474,8 @@ a:active { color:#121212;
     }
 
     h3  {
-        font-size: 13px; ;
+        font-size: 13px;
+        color: Green;
     }
 
     .banner img {
