@@ -239,7 +239,7 @@ h3 {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.3s;
+  transition: 0.25s;
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
 }
@@ -312,6 +312,7 @@ h3 {
     padding-top: 20px;
     background-color: #fdfdfd;
     width: 100%;
+    box-sizing: border-box;
     max-height: 600px;
     padding-bottom: 20px;
     border: 1px solid #121212;
@@ -370,6 +371,7 @@ h3 {
     background-color: #121212;
     margin: auto;
     padding: auto;
+    font-size: 14px;
 
 }
 
@@ -381,7 +383,7 @@ h3 {
 
 .footer ul {
     margin-top: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: left;
     list-style-type: none;
 }
@@ -413,35 +415,88 @@ a:active { color:#121212;
     }
  
 
-}
+                            }/*End max-width: 1400px */
 
 @media (max-width: 1000px) {
     #container, body {
-        width: 960px;
+        width: 920px;
         position: center;
         margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 36px;
+    }
+
+    h3  {
+        font-size: 24px; ;
     }
 
     .banner img {
         height: 280px;
     }
-
     .button {
-
-  text-align: center;
-  font-size: 24px;
-  display: inline-block;
-  padding: 20px;
-  margin:  5px;
-  width: 181px;
- 
-
-}
-
-.dropdown-content {
-  min-width: 180px;
+        text-align: center;
+        font-size: 24px;
+        display: inline-block;
+        padding: 20px;
+        margin:  5px;
+        width: 172px;
+    }
+     .button span {        
+        font-size: 16px;
+    }
+    .dropdown-content {
+        min-width: 180px;
   
-}
+    }
+    .gallery-content img {
+    max-width: 80%;
+    max-height: 400px;
+    }
+    .footer {
+        font-size: 13px;
+    }
 
-}
-}
+                        } /*End max-width: 1000px */
+
+@media (max-width: 720px) {
+    #container, body {
+        width: 700px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 28px;
+    }
+
+    h3  {
+        font-size: 20px; ;
+    }
+
+    .banner img {
+        height: 160px;
+    }
+    .button {
+        text-align: center;
+        font-size: 18px;
+        display: inline-block;
+        padding: 20px;
+        margin:  5px;
+        width: 132px;
+    }
+     .button span {        
+        font-size: 14px;
+    }
+    .dropdown-content {
+        min-width: 138px;
+  
+    }
+    .gallery-content img {
+    max-width: 80%;
+    max-height: 360px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+
+                        } /*End max-width: 720px */
