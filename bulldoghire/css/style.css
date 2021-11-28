@@ -458,8 +458,14 @@ a:active { color:#121212;
   
     }
     .gallery-content img {
-    max-width: 80%;
+    max-width: 75%;
     max-height: 400px;
+    }
+    .gallery-display-left {
+    left:7.5%;
+    }
+    .gallery-display-right {
+    right:7.5%;
     }
     .footer {
         font-size: 13px;
