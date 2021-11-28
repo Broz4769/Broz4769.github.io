@@ -173,6 +173,10 @@ h3 {
     width: 100%;
 }
 
+.banner img {
+    height: 340px ;
+}
+
 
 
 /* Create three unequal columns that floats next to each other */
@@ -404,7 +408,7 @@ a:active { color:#121212;
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
 
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
     #container, body {
         width: 1360px;
         position: center;
@@ -474,7 +478,7 @@ a:active { color:#121212;
     }
 
     .banner img {
-        height: 240px;
+        height: 260px;
     }
     .button {
         width: 130px;
