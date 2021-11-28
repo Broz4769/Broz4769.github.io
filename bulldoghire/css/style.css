@@ -418,6 +418,9 @@ a:active { color:#121212;
     .banner img {
         height: 300px;
     }
+    h3  {
+        color: blue;
+    }
  
 
                             }/*End max-width: 1400px */
@@ -433,7 +436,8 @@ a:active { color:#121212;
     }
 
     h3  {
-        font-size: 24px; ;
+        font-size: 24px;
+        color: red;
     }
 
     .banner img {
