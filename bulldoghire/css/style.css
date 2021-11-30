@@ -318,7 +318,7 @@ h3 {
     background-color: #fdfdfd;
     width: 100%;
     box-sizing: border-box;
-    max-height: 600px;
+    height: 500px;
     padding-bottom: 20px;
     border: 1px solid #121212;
 }
@@ -327,12 +327,14 @@ h3 {
     position: center;
     margin: auto;
     max-width: 90%;
-    max-height: 550px;
+    max-height: 100%;
     border: 1px solid #121212;
     border-radius: 4px;
     box-sizing: border-box;
+    display: none;
 
 }
+
 
 .gallery-button {
     border:none;
@@ -408,71 +410,6 @@ a:active { color:#121212;
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
 
-@media (max-width: 1400px) {
-    #container, body {
-        width: 1360px;
-        position: center;
-        margin:  0 auto 0 auto;
-    }
-
-    .banner img {
-        height: 300px;
-    }
-    h3  {
-        color: blue;
-    }
- 
-
-                            }/*End max-width: 1400px */
-
-@media (max-width: 1000px) {
-    #container, body {
-        width: 920px;
-        position: center;
-        margin:  0 auto 0 auto;
-    }
-    h2 {    
-        font-size: 36px;
-    }
-
-    h3  {
-        font-size: 20px;
-        color: red;
-    }
-
-    .banner img {
-        height: 280px;
-    }
-    .button {
-        width: 168px;
-        padding: 15px;
-        margin:  7.5px;
-    }
-    }
-     .button span {        
-        font-size: 17px;
-    }
-    .dropdown-content {
-        max-width: 172px;
-        font-size: 17px;
-  
-    }
-    .gallery-content img {
-    max-width: 75%;
-    max-height: 350px;
-    }
-    .gallery-display-left {
-    left:7.5%;
-    }
-    .gallery-display-right {
-    right:7.5%;
-    }
-    .footer {
-        font-size: 13px;
-    }
-
-                        } /*End max-width: 1000px */
-
 @media (max-width: 720px) {
     #container, body {
         width: 700px;
@@ -518,3 +455,71 @@ a:active { color:#121212;
     }
 
                         } /*End max-width: 720px */
+
+@media (max-width: 1000px) {
+    #container, body {
+        width: 920px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 36px;
+    }
+
+    h3  {
+        font-size: 20px;
+        color: #121212;
+    }
+
+    .banner img {
+        height: 280px;
+    }
+    .button {
+        width: 168px;
+        padding: 15px;
+        margin:  7.5px;
+    }
+    }
+     .button span {        
+        font-size: 17px;
+    }
+    .dropdown-content {
+        max-width: 172px;
+        font-size: 17px;
+  
+    }
+    .gallery-content img {
+    max-width: 90%;
+    }
+    .gallery-display-left {
+    left:7.5%;
+    }
+    .gallery-display-right {
+    right:7.5%;
+    }
+    .footer {
+        font-size: 13px;
+    }
+
+                        } /*End max-width: 1000px */
+
+
+    @media (max-width: 1360px) {
+    #container, body {
+        width: 1320px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+
+    .banner img {
+        height: 300px;
+    }
+    h3  {
+        color: blue;
+    }
+    .gallery-content img{
+    max-width: 90%;
+    max-height: 600px;
+    } 
+
+                        } /*End max-width: 1360px */
