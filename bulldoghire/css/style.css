@@ -441,14 +441,14 @@ a:active { color:#121212;
         font-size: 13px;
     }
     .gallery-content img {
-    max-width: 70%;
+    max-width: 80%;
     max-height: 300px;
     }
     .gallery-display-left {
-    left:7.5%;
+    left:5%;
     }
     .gallery-display-right {
-    right:7.5%;
+    right:5%;
     }
     .footer {
         font-size: 12px;
@@ -489,13 +489,13 @@ a:active { color:#121212;
   
     }
     .gallery-content img {
-    max-width: 90%;
+    max-width: 80%;
     }
     .gallery-display-left {
-    left:7.5%;
+    left:5%;
     }
     .gallery-display-right {
-    right:7.5%;
+    right:5%;
     }
     .footer {
         font-size: 13px;
