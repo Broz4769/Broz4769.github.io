@@ -171,7 +171,6 @@ h3 {
 .banner {
     position: center;
     background-color: #121212;
-    width: 100%;
 }
 
 .banner img {
@@ -217,133 +216,6 @@ h3 {
   display: table;
   clear: left;
 }
-/*----------------------------------------------------------------------------- 
-5 - button editing   
------------------------------------------------------------------------------*/
-
-
-.button {
-  
-  background: #fdfdfd;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding: 20px;
-  margin:  10px;
-  width: 252px;
-  border: 1px solid #121212;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: all 0.2s;
-  cursor: pointer;
-
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.25s;
-  font-size: 18px;
-  font-family: 'Oswald', sans-serif;
-}
-
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.3s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/* Style The Dropdown Button */
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  color: #121212;
-  position: absolute;
-  width: 260px;
-  margin-left: 5px;
-  background-color: #fdfdfd;
-  box-shadow: 0px 8px 16px 0px #121212;
-  z-index: 1;
-  font-family: 'Oswald', sans-serif;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a{
-  color: #121212;
-  padding: 10px 14px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgba(255, 126, 12, 0.75);
-    color: #121212;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-
-}
-
-/*----------------------------------------------------------------------------- 
-6 -Gallery /Slideshow   
------------------------------------------------------------------------------*/
-.gallery-content {
-    position: relative;
-    margin: auto;
-    padding-top: 20px;
-    background-color: #121212;
-    width: 100%;
-    box-sizing: border-box;
-    height: 500px;
-    padding-bottom: 20px;
-    border: 1px solid #121212;
-}
-
-.gallery-content img {
-    position: center;
-    margin: auto;
-    max-width: 100%;
-    max-height: 450px;
-    border: 1px solid #121212;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: none;
-
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 
 
 
@@ -392,8 +264,55 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
+@media (max-width: 720px) {
+    #header {
+       width: 700px;
+    }
 
+    #container body {
+        width: 700px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 24px;
+    }
 
+    h3  {
+        font-size: 14px;
+        color: Green;
+    }
+
+    .banner img {
+        height: 320px;
+        
+    }
+    .banner {
+        width: 700px;
+    }
+    .button {
+        width: 130px;
+        padding: 10px;
+        margin:  5px;
+    }
+     .button span {        
+        font-size: 13px;
+    }
+    .dropdown-content {
+        width: 134px;
+        font-size: 13px;
+    }
+    .gallery-content img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 300px;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
+
+                        } /*End max-width: 720px */
 
 @media (min-width:980px) and (max-width: 1280px) {
     
@@ -416,27 +335,11 @@ a:active { color:#121212;
     }
 
     .banner img {
-        height: 340px;
+        max-height: 340px;
+        
     }
     .banner {
         width: 960px;
-    }
-
-    .button {
-        width: 168px;
-        padding: 15px;
-        margin:  7.5px;
-    }
-     .button span {        
-        font-size: 17px;
-    }
-    .dropdown-content {
-        width: 172px;
-        font-size: 17px;
-  
-    }
-    .gallery-content img {
-    max-width: 90%;
     }
     
     .footer {
@@ -446,7 +349,7 @@ a:active { color:#121212;
                         } /*End max-width: 1000px */
 
 
-@media (min-width:1360px) and (max-width:1920px) {
+@media  (min-width:1360px) and (max-width:1920px) {
     #header {
        width: 1360px; 
     }
@@ -456,21 +359,13 @@ a:active { color:#121212;
         position: center;
         margin:  0 auto 0 auto;
     }
-
-    .dropdown-content {
-        width: 260px;
-        font-size: 17px;
-    }
-
     .banner img {
         height: 340px;
+        
     }
-    h3  {
-        color: blue;
+    .banner {
+        width: 1360px;
     }
-    .gallery-content img{
-    max-width: 90%;
-    max-height: 600px;
-    } 
+    
 
                         } /*End max-width: 1360px */
