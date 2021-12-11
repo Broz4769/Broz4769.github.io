@@ -105,7 +105,7 @@ h3 {
 
 
 /* relevant styles */
-.img__wrap_left {
+.kennel__wrap_left {
   float: left;
   position: relative;
   height: 48px;
@@ -135,7 +135,7 @@ h3 {
   transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap_left:hover .img__description {
+.kennel__wrap_left:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
