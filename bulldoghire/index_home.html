@@ -27,7 +27,7 @@
 	<div id="header">
 		<div class="kennel__wrap_left">
 		<a href="file:///C:/Users/Bryan/Desktop/COURSES/bulldoghire/index_home.html"
-		><img src="https://img.icons8.com/fluency/48/000000/dog-house.png" alt="Dog Home Button" class="img_img" align="left"><p class="img__description">HOME</p></div><!--img__wrap_left-->
+		><img src="https://img.icons8.com/fluency/48/000000/dog-house.png" alt="Dog Home Button" class="img_img" align="left"><p class="img__description">HOME</p></a></div><!--img__wrap_left-->
 		<div class="img__wrap_right">
     	<a href="https://www.sacoronavirus.co.za/" target="_blank" class="link"><h1>Stay informed! Visit the SA Department of Health's website for COVID-19 updates: www.sacoronavirus.co.za</a> &nbsp <!--adds a space &nbsp--> <i class="arrow left"></i>Click here</h1></div><!--img__wrap_right-->
 	</div><!--header-->
@@ -36,7 +36,13 @@
 	<div id="container">
 
 		<div class=banner>
-			<img src="images/bulldog-top-dog.jpg" alt="bulldog" class="center">
+      		<!-- Button to reset the Image size -->
+      		
+			<img src="images/bulldog-top-dog.jpg" alt="bulldog" class="center"
+			onclick="enlargeImg()"
+        	id="img1"
+      		/>
+      		
 
 		</div><!--banner-->
 
@@ -52,7 +58,7 @@
 			<a class="button"><span>OUR PRODUCTS </span></a>
 			<div class="dropdown-content">
 				<a href="our_products/bulldog_hire_price_list_2021.pdf" target="blank">View Pricelist (pdf)</a>
-    			<a href="our_products/index_our_products.html">View All Products</a>
+    			<a href="our_products/index_our_products.html">View Our Products</a>
 			</div>
 		</div> <!-- End Button 2-->
 		<div class="column dropdown">
@@ -63,8 +69,12 @@
     			<a href="#">FAQs</a>
     		</div>
 		</div> <!-- End Button 3-->
-		<div class="column">
+		<div class="column dropdown">
 			<a href="" target="blank" class="button"><span>GALLERY</span></a>
+			<div class="dropdown-content">
+    			<a href="#">Functions & Events</a>
+    			<a href="our_products/index_our_products.html">View Products</a>
+    		</div>
 		</div> <!-- End Button 4-->
 		<div class="column">
 			<a href="" target="blank" class="button"><span>CONTACT US </span></a>

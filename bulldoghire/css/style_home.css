@@ -10,8 +10,7 @@ Author: Bryan Bulling
 01=BASE   
 -----------------------------------------------------------------------------*/
 body {
-		background: url('../images/bulldog3.jpg');
-		background-repeat: no-repeat;
+		
 		background-position: 250px 85px;
 		background-attachment: fixed;
 		-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
@@ -347,7 +346,13 @@ h3 {
   animation-duration: 1.5s;
 }
 
-
+button {
+    color: green;
+    position: relative;
+    margin-left: 80%;
+    z-index: +1;
+    
+}
 
 
 /*----------------------------------------------------------------------------- 
