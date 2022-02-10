@@ -241,7 +241,8 @@ a.box img {
 
 .lightbox-target img {
 object-fit: cover;
-position: relative;    
+position: relative;
+vertical-align: middle;    
 max-width: 0%;
 border: 2px solid #121212;
 box-shadow: 0px 0px 8px rgba(0,0,0,.3);

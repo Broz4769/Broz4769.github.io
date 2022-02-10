@@ -400,16 +400,134 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
+@media only screen and (min-width:480px) and (max-width: 719px) {
+
+#header {
+       width: 680px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    #container {
+        width: 680px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 20px;
+        color: yellow;
+    }
+
+    h3  {
+        font-size: 16px;
+        color: yellow;
+    }
+
+    .column {
+        float: none;
+        padding: 0px;
+  
+    }
+
+    .banner {
+        width: 680px;
+    }
+
+    .button {
+        width: 360px;
+        padding: 10px;
+        margin:  5px;
+    }
+     .button span {        
+        font-size: 16px;
+    }
+    .dropdown-content {
+        width: 180px;
+        margin-left: 280px;
+        margin-top: -45px;
+        border: 1px solid #121212;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+    .gallery-content img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 450px;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
 
 
 
-@media (min-width:980px) and (max-width: 1280px) {
+
+
+                        }/*End max-width: 719px */
+
+
+@media only screen and (min-width:720px) and (max-width: 979px) {
+    #header {
+       width: 860px;
+    }
+
+    #container {
+        width: 860px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 24px;
+        color: blue;
+    }
+
+    h3  {
+        font-size: 20px;
+        color: blue;
+    }
+
+
+    .banner img {
+        
+        
+    }
+    .banner {
+        width: 860px;
+    }
+    .button {
+        width: 160px;
+        padding: 10px;
+        margin:  5px;
+    }
+     .button span {        
+        font-size: 13px;
+    }
+
+
+    .dropdown-content {
+        width: 134px;
+        font-size: 13px;
+    }
+    .gallery-content img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 450px;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
+                        }/*End max-width: 979px */
+
+@media (min-width:980px) and (max-width: 1359px) {
     
     #header {
        width: 960px;
     }
 
-    #container body {
+    #container {
         width: 960px;
         position: center;
         margin:  0 auto 0 auto;
@@ -451,7 +569,7 @@ a:active { color:#121212;
         font-size: 13px;
     }
 
-                        } /*End max-width: 1000px */
+                        } /*End max-width: 1359px */
 
 
 @media (min-width:1360px) and (max-width:1920px) {
@@ -459,7 +577,7 @@ a:active { color:#121212;
        width: 1360px; 
     }
 
-    #container body {
+    #container {
         width: 1360px;
         position: center;
         margin:  0 auto 0 auto;
@@ -473,12 +591,17 @@ a:active { color:#121212;
     .banner img {
         height: 340px;
     }
+
+    h2 {
+        color: Green;
+    }
+
     h3  {
-        color: blue;
+        color: Green;
     }
     .gallery-content img{
     max-width: 90%;
     max-height: 600px;
     } 
 
-                        } /*End max-width: 1360px */
+                        } /*End max-width: 1920px */
