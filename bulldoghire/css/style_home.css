@@ -486,6 +486,7 @@ a:active { color:#121212;
     h3  {
         font-size: 20px;
         color: blue;
+        margin-bottom: 30px;
     }
 
 
@@ -507,7 +508,10 @@ a:active { color:#121212;
 
 
     .dropdown-content {
-        width: 134px;
+        width: 160px;
+        margin-left: 5px;
+        border: 1px solid #121212;
+        border-radius: 4px;
         font-size: 13px;
     }
     .gallery-content img {
@@ -539,6 +543,7 @@ a:active { color:#121212;
     h3  {
         font-size: 20px;
         color: #121212;
+        margin-bottom: 38px;
     }
 
     .banner img {
@@ -557,7 +562,10 @@ a:active { color:#121212;
         font-size: 17px;
     }
     .dropdown-content {
-        width: 172px;
+        width: 168px;
+        margin-left: 5px;
+        border: 1px solid #121212;
+        border-radius: 4px;
         font-size: 17px;
   
     }
@@ -585,11 +593,18 @@ a:active { color:#121212;
 
     .dropdown-content {
         width: 260px;
-        font-size: 17px;
+        margin-left: 5px;
+        border: 1px solid #121212;
+        border-radius: 4px;
+        font-size: 20px;
     }
 
     .banner img {
         height: 340px;
+    }
+
+    .button span {        
+        font-size: 20px;
     }
 
     h2 {
@@ -598,6 +613,7 @@ a:active { color:#121212;
 
     h3  {
         color: Green;
+        margin-bottom: 38px;
     }
     .gallery-content img{
     max-width: 90%;
