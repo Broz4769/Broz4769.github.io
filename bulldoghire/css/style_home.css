@@ -452,9 +452,9 @@ a:active { color:#121212;
         font-size: 18px;
     }
     .gallery-content img {
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
-    max-height: 450px;
+    max-height: 400px;
     }
     
     .footer {
@@ -515,9 +515,10 @@ a:active { color:#121212;
         font-size: 13px;
     }
     .gallery-content img {
-    max-width: 100%;
-    margin: auto;
-    max-height: 450px;
+        max-width: 100%;
+        margin: auto;
+        max-height: 460px;
+    
     }
     
     .footer {
@@ -538,6 +539,7 @@ a:active { color:#121212;
     }
     h2 {    
         font-size: 36px;
+        color: #121212;
     }
 
     h3  {
@@ -554,15 +556,16 @@ a:active { color:#121212;
     }
 
     .button {
-        width: 168px;
+        width: 174px;
         padding: 15px;
-        margin:  7.5px;
+        margin:  8px;
     }
      .button span {        
         font-size: 17px;
     }
+
     .dropdown-content {
-        width: 168px;
+        width: 174px;
         margin-left: 5px;
         border: 1px solid #121212;
         border-radius: 4px;
