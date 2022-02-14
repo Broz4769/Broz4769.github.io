@@ -242,6 +242,18 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   font-family: 'Oswald', sans-serif;
 }
 
+.backbox img {
+  
+  object-fit: cover;
+  color: black;
+  text-decoration: none;
+  width: 250px;
+  height: 180px;
+  display:  block;
+  margin-left:  55px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
 
 .box img {
   object-fit: cover;
@@ -299,6 +311,7 @@ a.lightbox-close {
   width:50px;
   height:50px;
   background: white;
+
   color: black;
   text-decoration: none;
   top: -80px;
@@ -349,7 +362,7 @@ transform:rotate(-45deg);
 opacity: 1;
 top: 0;
 bottom: 0;
-  overflow:scroll;
+overflow:auto;
 }
 
 .lightbox-target:target img {
