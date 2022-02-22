@@ -1,0 +1,519 @@
+/* 
+
+Project Name: Bulldog Function Hire
+Client: Bulldog Function Hire
+Author: Bryan Bulling
+
+*/
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+#header {
+       width: 1360px;
+       position: center;
+       background-color: #fdfdfd;
+       text-align: center;
+       font-family: 'Oswald', sans-serif;
+       margin:  0 auto 0 auto;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+02=Middle   
+-----------------------------------------------------------------------------*/
+
+#container {
+
+        background-color: #ff7e0c;
+        position: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        width: fit-content;
+        margin:  0 auto 0 auto;
+        
+}
+
+
+
+#left-column {
+   height: 100;
+
+}
+
+#middle-column {
+    height: 100px;
+
+}
+
+#right-column {
+    height: 100px;
+    
+}
+
+
+h1 {    
+        font-size: 13px;
+        padding: 10px;
+        color: #121212;
+
+
+}
+h2 {    background-color: #ff7e0c;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        color:  #121212;
+        font-size: 42px;
+        width:  auto;
+        border-radius: 0px;
+        font-family: 'Oswald', sans-serif; 
+
+}
+
+
+
+/* relevant styles */
+.img__wrap_left {
+  float: left;
+  position: relative;
+  height: 48px;
+  width: 48px;
+}
+
+
+.img__description {
+  position: absolute;
+  text-align: center;
+  height: 36px;
+  width:  48px;
+  margin-top: 6px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fdfdfd50;
+  color: #121212;
+  visibility: hidden;
+  opacity: 0; 
+   z-index: 1;     
+   padding: 1em;     
+   margin: -1em;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap_left:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.link {
+
+    transition: all 0.1s;
+}
+
+.link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+.center {
+    position: center;
+    max-width:  100%;
+    padding: 0px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.banner {
+    position: center;
+    background-color: #121212;
+    width: 100%;
+}
+
+.banner img {
+    height: 340px ;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.float_left {
+  float: left;
+  padding: 0px;
+  
+}
+
+.column-left {
+  width: 20%;
+  background-color: #121212 ;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.column-middle {
+  
+  width: 60%;
+  background-color: #121212 ;
+}
+
+
+
+.column-right {
+  width: 20%;
+  background-color: #121212 ;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.clearfloat:after {
+  content: "";
+  display: table;
+  clear: left;
+}
+
+a.link:link { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+         text-decoration: none;}
+a.link:visited { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+         text-decoration: none;}
+a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
+          text-decoration: none;}
+
+
+/*----------------------------------------------------------------------------- 
+3 -Picture Gallery   
+-----------------------------------------------------------------------------*/
+/* relevant styles */
+.picture_gallery {
+    position: relative;
+    width: 940px ;
+    height: 800px;
+
+    display: block;
+    margin:  auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  
+}
+
+.centeredtext {
+  position: absolute;
+  top: 86%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  color: #121212;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.backbox img {
+  
+  object-fit: cover;
+  color: black;
+  text-decoration: none;
+  width: 280px;
+  height: 180px;
+  display:  block;
+  margin-left: 15px;
+  margin-top: 75px;
+  box-sizing: border-box;
+}
+
+.box img {
+  object-fit: fit;
+  color: black;
+  text-decoration: none;
+  width: 280px;
+  height: 340px;
+  display:  block;
+  margin-left:  15px;
+  margin-top: 20px;
+  border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+  position: absolute;
+  max-width: 940px;
+  max-height: 800px;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+  object-fit: cover;
+  margin-bottom: 0px;
+  max-width: 0%;
+  transform: translate(-50%, -50%)
+  border: 2px solid #121212;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  z-index: 100%s;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  overflow:   hidden;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+  position: absolute;
+  display: block;
+  width:50px;
+  height:50px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+  overflow:scroll;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+
+
+/*----------------------------------------------------------------------------- 
+7 -Footer   
+-----------------------------------------------------------------------------*/
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+    margin: auto;
+    padding: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ff7e0c;
+
+}
+
+.footer .links{
+    color: #ff7e0c;
+    text-align: left;
+    margin: auto;
+    font-style: bold;
+    font-size: 15px;
+}
+
+.footer ul {
+    margin:  auto;
+    padding-top: 20px;
+    text-align: left;
+    list-style-type: none;
+}
+
+
+/*----------------------------------------------------------------------------- 
+10 - Responsive Design   
+-----------------------------------------------------------------------------*/
+
+
+@media (max-width: 979px) {
+    #header {
+       width: 720px;
+    }
+
+    #container body {
+        width: 720px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 24px;
+        color: blue;
+    }
+
+
+    .banner img {
+        height: 320px;
+        
+    }
+    .banner {
+        width: 720px;
+        background-color: #121212 ;
+    }
+    .button {
+        width: 130px;
+        padding: 10px;
+        margin:  5px;
+    }
+     .button span {        
+        font-size: 13px;
+    }
+    .dropdown-content {
+        width: 134px;
+        font-size: 13px;
+    }
+    .gallery-content img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 300px;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
+
+                        } /*End max-width: 720px */
+
+@media (min-width:980px) and (max-width: 1280px) {
+    
+    #header {
+       width: 960px;
+    }
+
+    #container {
+        width: 960px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 36px;
+        color: green;
+    }
+
+
+    .banner img {
+        max-height: 340px;
+        
+    }
+    .banner {
+        width: 100%;
+    }
+    
+    .footer {
+        font-size: 13px;
+    }
+
+                        } /*End max-width: 1000px */
+
+
+@media  (min-width:1360px) and (max-width:1920px) {
+    #header {
+       width: 1360px; 
+    }
+
+    #container body {
+        width: 1360px;
+        position: center;
+        margin:  0 auto 0 auto;
+    }
+    h2 {    
+        font-size: 36px;
+        color: red;
+    }
+    .banner img {
+        height: 340px;
+        
+    }
+    .banner {
+        width: 1360px;
+        background-color: #121212 ;
+    }
+
+    .product_categories {
+    position: center;
+    margin-left:30% ;
+    width: 600px;
+      
+}
+    
+
+                        } /*End max-width: 1360px */
