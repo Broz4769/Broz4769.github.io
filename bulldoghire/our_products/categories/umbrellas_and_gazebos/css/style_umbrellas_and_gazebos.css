@@ -225,8 +225,8 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 
 .centeredtext {
   position: absolute;
-  top: 86%;
-  left: 54%;
+  top: 84%;
+  left: 52%;
   transform: translate(-50%, -50%);
   color: #121212;
   font-size: 22px;
@@ -237,32 +237,16 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   object-fit: cover;
   color: black;
   text-decoration: none;
-  width: 250px;
+  width: 300px;
   height: 180px;
   display:  block;
-  margin-left: 15px;
-  margin-top: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
   box-sizing: border-box;
 }
 
 .mybackImg:hover {
     opacity: 0.7;
-}
-
-.box img {
-  opacity: 1;
-  object-fit: fit;
-  color: black;
-  text-decoration: none;
-  width: 250px;
-  height: 180px;
-  display:  block;
-  margin-left:  15px;
-  margin-top: 20px;
-  border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
-  border-radius: 4px;
-  box-sizing: border-box;
-  
 }
 
 
@@ -271,8 +255,17 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 
 .myImg {
   border-radius: 5px;
+  object-fit: fit;
   cursor: pointer;
   transition: 0.3s;
+  margin-left:  10px;
+  margin-top: 20px;
+  border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0px;
+  width: 300px;
+  height: 220px;
 }
 
 .myImg:hover {opacity: 0.7;}

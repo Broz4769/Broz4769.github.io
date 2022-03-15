@@ -43,84 +43,38 @@
 	<div class="clearfloat"></div> <!--No Floating of above DIVs -->
 
 	<div class="picture_gallery">
+		
 		<!--box 0 - Back to products--> 
 		<div class="container backbox float_left">
-			<a href="../../index_our_products.html"><img src="images/back-button.png" style="object-fit: contain;" alt= "back icon">
+			<a href="../../index_our_products.html"><img class="mybackImg" src="images/0_back-button.png" style="object-fit: contain;" alt= "back icon">
 			<div class="centeredtext">BACK</div></a>
 		</div>
 
-		<!--box 1-->
-		<a class="box float_left lightbox" href="#box1"><img src="images/cake_stand.png" alt= "cake stand">
-		</a>
-				<div class="lightbox-target" id="box1">
-   				<img src="images/cake_stand.png"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-		<!--box 2-->
-		<a class="box float_left lightbox" href="#box2"><img src="images/champagne_cooler_large.jpg" alt= "champagne cooler">
-		</a>
-				<div class="lightbox-target" id="box2">
-   				<img src="images/champagne_cooler_large.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 3-->			
-		<a class="box float_left lightbox" href="#box3"><img src="images/gas_braai_small.jpg" alt= "gas braai">
-		</a>
-				<div class="lightbox-target" id="box3">
-   				<img src="images/gas_braai_small.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-		<!--box 4-->
-		<a class="box float_left lightbox" href="#box4"><img src="images/ice_bucket.jpg" alt= "ice bucket">
-		</a>
-				<div class="lightbox-target" id="box4">
-   				<img src="images/ice_bucket.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 5-->		
-		<a class="box float_left lightbox" href="#box5"><img src="images/ice_tong.jpg" alt= "ice tong">
-		</a>
-				<div class="lightbox-target" id="box5">
-   				<img src="images/ice_tong.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 6-->		
-		<a class="box float_left lightbox" href="#box6"><img src="images/ice_bucket_and_tong.jpg" alt= "ice bucket tong">
-		</a>
-		        <div class="lightbox-target" id="box6">
-   				<img src="images/ice_bucket_and_tong.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 7-->
-		<a class="box float_left lightbox" href="#box7"><img src="images/pallet_wodden_bar.jpg" alt= "wooden bar">
-		</a>
-		        <div class="lightbox-target" id="box7">
-   				<img src="images/pallet_wodden_bar.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 8-->
-		<a class="box float_left lightbox" href="#box8"><img src="images/wooden_platter.jpg" alt= "wooden platter">
-		</a>
-		        <div class="lightbox-target" id="box8">
-   				<img src="images/wooden_platter.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 9-->
-		<a class="box float_left lightbox" href="#box9"><img src="images/platter_etc2.jpg" alt= "platter">
-		</a>
-		        <div class="lightbox-target" id="box9">
-   				<img src="images/platter_etc2.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 10-->
-		<a class="box float_left lightbox" href="#box10"><img src="images/previn.jpg" alt= "previn">
-		</a>
-		        <div class="lightbox-target" id="box10">
-   				<img src="images/previn.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
+		<!-- Trigger the Modal -->
+		<img class="myImg float_left" src="images/1_cake_stand.png" alt="Cake Stand">
+		<img class="myImg float_left" src="images/2_champagne_cooler_large.jpg" alt= "Large Champagne Cooler">
+		<img class="myImg float_left" src="images/3_ice_bucket.jpg" alt= "Ice Bucket">
+		<img class="myImg float_left" src="images/4_ice_tong.jpg" alt= "Ice Tong">
+		<img class="myImg float_left" src="images/5_ice_bucket_and_tong.jpg" alt= "Ice Bucket & Tong">
+		<img class="myImg float_left" src="images/6_pallet_wodden_bar.jpg" alt= "Wooden Paller Bar">
+		<img class="myImg float_left" src="images/7_wooden_platter.jpg" alt= "Wooden Platter">
+		<img class="myImg float_left" src="images/8_platter_etc2.jpg" alt= "Platter">
+		<img class="myImg float_left" src="images/9_previn.jpg" alt= "Previn">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  		<!-- The Close Button -->
+  		<span class="close">&times;</span>
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+  		<!-- Modal Caption (Image Text) -->
+  		<div id="caption"></div>
+		</div>
+		
 
-	</div><!--End Picture Gallery-->
+		
+
+	</div><!--End of Gallery-->
+
 
 	<div class="clearfloat"></div> <!--No Floating of above button DIVs-->
 
@@ -137,6 +91,7 @@
 				<li><a href="https://www.flaticon.com/free-icons/camera-back" title="camera back icons" class="links">Camera back icon designed by Freepik - Flaticon</a></li>
 			</ul>
 		</div><!--End Footer Container-->
-	</div><!--Container-->	
+	</div><!--Container-->
+	<script src="javascript/script_modal.js"></script>
 </body>
 </html>
