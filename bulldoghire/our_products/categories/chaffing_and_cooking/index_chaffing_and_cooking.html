@@ -45,32 +45,24 @@
 	<div class="picture_gallery">
 		<!--box 0 - Back to products--> 
 		<div class="container backbox float_left">
-			<a href="../../index_our_products.html"><img src="images/back-button.png" style="object-fit: contain;" alt= "back icon">
+			<a href="../../index_our_products.html"><img class="mybackImg" src="images/0_back-button.png" style="object-fit: contain;" alt= "back icon">
 			<div class="centeredtext">BACK</div></a>
 		</div>
 
-		<!--box 1-->
-		<a class="box float_left lightbox" href="#box1"><img src="images/chaffing_dish_rectangular.jpg" alt= "chaffing dish">
-		</a>
-				<div class="lightbox-target" id="box1">
-   				<img src="images/chaffing_dish_rectangular.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-		<!--box 2-->
-		<a class="box float_left lightbox" href="#box2"><img src="images/chaffing_dish_rectangular_open.jpg" alt= "chaffing dish">
-		</a>
-				<div class="lightbox-target" id="box2">
-   				<img src="images/chaffing_dish_rectangular_open.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 3-->			
-		<a class="box float_left lightbox" href="#box3"><img src="images/rolltop_chaffing_dish.jpg" alt= "rolltop chaffing dish">
-		</a>
-				<div class="lightbox-target" id="box3">
-   				<img src="images/rolltop_chaffing_dish.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-		
+		<!-- Trigger the Modal -->
+		<img class="myImg float_left" src="images/1_chaffing_dish_rectangular.jpg" alt="Rectangular Chaffing Dish">
+		<img class="myImg float_left" src="images/2_chaffing_dish_rectangular_open.jpg" alt= "Rectangular Chaffing Dish - Open">
+		<img class="myImg float_left" src="images/3_rolltop_chaffing_dish.jpg" alt= "Rolltop Chaffing Dish">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  		<!-- The Close Button -->
+  		<span class="close">&times;</span>
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+  		<!-- Modal Caption (Image Text) -->
+  		<div id="caption"></div>
+		</div><!--End Modal-->
+
    		
 	</div><!--End Picture Gallery-->
 
@@ -92,5 +84,6 @@
 			</ul>
 		</div><!--End Footer Container-->
 	</div><!--Container-->	
+	<script src="javascript/script_modal.js"></script>
 </body>
 </html>

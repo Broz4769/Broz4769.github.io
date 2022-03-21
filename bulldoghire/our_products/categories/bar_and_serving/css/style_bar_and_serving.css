@@ -225,8 +225,8 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 
 .centeredtext {
   position: absolute;
-  top: 80%;
-  left: 60%;
+  top: 82%;
+  left: 57%;
   transform: translate(-50%, -50%);
   color: #121212;
   font-size: 22px;
@@ -240,7 +240,7 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   width: 250px;
   height: 180px;
   display:  block;
-  margin-left:  35px;
+  margin-left:  35px; /*Must be the same as Margin-Left .myImg*/
   margin-top: 10px;
   box-sizing: border-box;
 }
@@ -258,7 +258,7 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   object-fit: fit;
   cursor: pointer;
   transition: 0.3s;
-  margin-left:  35px;
+  margin-left:  35px; /*Must be the same as Margin-Left .backbox img*/
   margin-top: 10px;
   border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
   border-radius: 4px;
@@ -300,6 +300,7 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   width: 80%;
   max-width: 700px;
   text-align: center;
+  font-size: 24px;
   color: #ccc;
   padding: 10px 0;
   height: 150px;
@@ -334,12 +335,6 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
 
 
 

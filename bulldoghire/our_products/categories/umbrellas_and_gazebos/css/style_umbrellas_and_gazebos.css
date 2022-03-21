@@ -300,6 +300,7 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   width: 80%;
   max-width: 700px;
   text-align: center;
+  font-size: 24px;
   color: #ccc;
   padding: 10px 0;
   height: 150px;
