@@ -45,32 +45,25 @@
 	<div class="picture_gallery">
 		<!--box 0 - Back to products--> 
 		<div class="container backbox float_left">
-			<a href="../../index_our_products.html"><img src="images/0_back-button.png" style="object-fit: contain;" alt= "back icon">
+			<a href="../../index_our_products.html"><img class="mybackImg" src="images/0_back-button.png" style="object-fit: contain;" alt= "back icon">
 			<div class="centeredtext">BACK</div></a>
 		</div>
 
-		<!--box 1-->
-		<a class="box float_left lightbox" href="#box1"><img src="images/1_ancona_chair_white_cover.jpg" alt= "white cover ancona chair">
-		</a>
-				<div class="lightbox-target" id="box1">
-   				<img src="images/1_ancona_chair_white_cover.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-   		<!--box 2-->			
-		<a class="box float_left lightbox" href="#box2"><img src="images/3_cocktail_table_black_stretch_cloth.jpg" alt= "black stretch cloth cocktail table">
-		</a>
-				<div class="lightbox-target" id="box2">
-   				<img src="images/3_cocktail_table_black_stretch_cloth.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
-
-		<!--box 3-->			
-		<a class="box float_left lightbox" href="#box3"><img src="images/4_cocktail_table_white_stretch_cloth.jpg" alt= "white stretch cloth cocktail table">
-		</a>
-				<div class="lightbox-target" id="box3">
-   				<img src="images/4_cocktail_table_white_stretch_cloth.jpg"/>
-   				<a class="lightbox-close" href="#!">
-   				</a></div>
+		<!-- Trigger the Modal -->
+		<img class="myImg float_left mySlides" src="images/1_ancona_chair_white_cover.jpg" alt="Ancona White Chair Cover">
+		<img class="myImg float_left mySlides" src="images/2_ancona_chairs_with_chair_covers.jpg" alt= "Ancona Chairs With White Covers">
+		<img class="myImg float_left mySlides" src="images/3_cocktail_table_black_stretch_cloth.jpg" alt= "Cocktail Table Stretch Cloth Cover - Black">
+		<img class="myImg float_left mySlides" src="images/4_cocktail_table_white_stretch_cloth.jpg" alt= "Cocktail Table Stretch Cloth Cover - White ">
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  		<!-- The Close Button -->
+  		<span class="close">&times;</span>
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+  		<!-- Modal Caption (Image Text) -->
+  		<div id="caption"></div>
+		</div><!--End Modal-->
    		
 	</div><!--End Picture Gallery-->
 
@@ -91,6 +84,7 @@
 				<li><a href="https://www.flaticon.com/free-icons/camera-back" title="camera back icons" class="links">Camera back icon designed by Freepik - Flaticon</a></li>
 			</ul>
 		</div><!--End Footer Container-->
-	</div><!--Container-->	
+	</div><!--Container-->
+	<script src="javascript/script_modal.js"></script>	
 </body>
 </html>

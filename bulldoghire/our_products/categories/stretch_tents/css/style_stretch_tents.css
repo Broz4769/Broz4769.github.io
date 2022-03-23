@@ -208,21 +208,14 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 3 -Picture Gallery   
 -----------------------------------------------------------------------------*/
 /* relevant styles */
-.picture_gallery_1 {
+.picture_gallery {
     position: relative;
     width: 940px ;
-    height: 760px;
+    height: 1560px;
     display: block;
     margin:  auto;
 }
 
-.picture_gallery_2 {
-    position: relative;
-    width: 940px ;
-    height: 800px;
-    display: block;
-    margin:  auto;
-}
 .container {
   position: relative;
   text-align: center;
@@ -232,19 +225,20 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 .centeredtext {
   position: absolute;
   top: 86%;
-  left: 54%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: #121212;
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
 
+
 .backbox img {
   
   object-fit: cover;
   color: black;
   text-decoration: none;
-  width: 450px;
+  width: 400px;
   height: 180px;
   display:  block;
   margin-left: 15px;
@@ -252,125 +246,93 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
   box-sizing: border-box;
 }
 
-.box img {
-  opacity: 1;
+.mybackImg:hover {
+    opacity: 0.7;
+}
+
+/* Style the Image Used to Trigger the Modal */
+
+
+.myImg {
+  border-radius: 5px;
   object-fit: fit;
-  color: black;
-  text-decoration: none;
-  width: 450px;
-  height: 360px;
-  display:  block;
-  margin-left:  15px;
-  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left:  15px; /*Must be the same as Margin-Left .backbox img*/
+  margin-top: 10px;
   border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
   border-radius: 4px;
   box-sizing: border-box;
-  
+  padding: 0px;
+  width: 400px;
+  height: 300px;
 }
 
+.myImg:hover {opacity: 0.7;}
 
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-  position: absolute;
-  max-width: 940px;
-  max-height: 800px;
-  background: rgba(0,0,0,0.7);
-  opacity: 0;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
- 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
-.lightbox-target img {
-  object-fit: cover;
-  margin-bottom: 0px;
-  max-width: 0%;
-  transform: translate(-50%, -50%)
-  border: 2px solid #121212;
-  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-  z-index: 100%s;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  overflow:   hidden;
-  
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-  position: absolute;
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
   display: block;
-  width:50px;
-  height:50px;
-  background: white;
-  color: black;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 24px;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
   text-decoration: none;
-  top: -80px;
-  right: 0;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-  overflow:scroll;
-}
-
-.lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.lightbox-target:target a.lightbox-close {
-top: 0;
+  cursor: pointer;
 }
 
 
