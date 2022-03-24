@@ -270,6 +270,7 @@ h3 {
   right: 0;
 }
 
+
 /* Style The Dropdown Button */
 
 /* The container <div> - needed to position the dropdown content */
@@ -308,8 +309,25 @@ h3 {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
+
+.element {
+    position: relative;
+}
+ 
+/*replace the content value with the
+corresponding value from the list below*/
+ 
+.element:after {
+    content: "\2B73"; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: #121212;
+    margin-top: -2px;
+    float: right;
+    margin-right: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
 
 /*----------------------------------------------------------------------------- 
 6 -Gallery /Slideshow   

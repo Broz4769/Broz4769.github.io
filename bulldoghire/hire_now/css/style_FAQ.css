@@ -9,6 +9,18 @@ Author: Bryan Bulling
 /*----------------------------------------------------------------------------- 
 01=BASE   
 -----------------------------------------------------------------------------*/
+body {
+		background: url('../images/bulldog3.jpg');
+		background-repeat: no-repeat;
+		background-position: 250px 85px;
+		background-attachment: fixed;
+		-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+}
+
 #header {
        width: 1360px;
        position: center;
@@ -26,16 +38,16 @@ Author: Bryan Bulling
 
 #container {
 
-        background-color: #ff7e0c;
-        position: center;
-        border-top-left-radius: 10px;
+		background-color: #fdfdfd;
+		position: center;
+		border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        text-align: center;
+		text-align: center;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px; 
-        width: fit-content;
-        margin:  0 auto 0 auto;
-        
+  		width: fit-content;
+  		margin:  0 auto 0 auto;
+    	
 }
 
 
@@ -63,12 +75,13 @@ h1 {
 
 
 }
-h2 {    background-color: #ff7e0c;
-        margin-top: 0px;
+h2 {    
+        text-align: left;
+        background-color: #fdfdfd;
+        margin-top: 25px;
         margin-bottom: 10px;
         padding-top: 10px;
         padding-left: 50px;
-        padding-bottom: 0px;
         color:  #121212;
         font-size: 42px;
         width:  auto;
@@ -77,6 +90,19 @@ h2 {    background-color: #ff7e0c;
 
 }
 
+h3 {
+    background-color: #ff7e0c;
+    color: yellow;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    white-space: nowrap;
+}
 
 
 /* relevant styles */
@@ -141,6 +167,7 @@ h2 {    background-color: #ff7e0c;
     padding: 0px;
 }
 
+
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
@@ -159,7 +186,7 @@ h2 {    background-color: #ff7e0c;
 
 
 /* Create three unequal columns that floats next to each other */
-.float_left {
+.column {
   float: left;
   padding: 0px;
   
@@ -196,144 +223,70 @@ h2 {    background-color: #ff7e0c;
   clear: left;
 }
 
-a.link:link { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
-         text-decoration: none;}
-a.link:visited { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
-         text-decoration: none;}
-a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
-          text-decoration: none;}
-
 
 /*----------------------------------------------------------------------------- 
-3 -Picture Gallery   
+3 -FAQ Body
 -----------------------------------------------------------------------------*/
-/* relevant styles */
-.picture_gallery {
+#FAQ_Body {
+
     position: relative;
-    width: 940px ;
-    height: 800px;
-
-    display: block;
-    margin:  auto;
+    padding: 20px;
 }
 
-.container {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #ff7e0c;
   position: relative;
-  text-align: center;
-  
-}
-
-.centeredtext {
-  position: absolute;
-  top: 82%;
-  left: 55%;
-  transform: translate(-50%, -50%);
   color: #121212;
-  font-size: 22px;
-  font-family: 'Oswald', sans-serif;
-}
-
-.backbox img {
-  
-  object-fit: cover;
-  color: black;
-  text-decoration: none;
-  width: 280px;
-  height: 180px;
-  display:  block;
-  margin-left:  25px;/*Must be the same as Margin-Left .myImg*/
-  margin-top: 10px;
-  box-sizing: border-box;
-}
-
-.mybackImg:hover {
-    opacity: 0.7;
-}
-
-
-/* Style the Image Used to Trigger the Modal */
-
-
-.myImg {
-  border-radius: 5px;
-  object-fit: fit;
   cursor: pointer;
-  transition: 0.3s;
-  margin-left:  25px;/*Must be the same as Margin-Left .backbox img*/
-  margin-top: 10px;
-  border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+  padding: 18px;
+  margin-left: 50px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  border: 1px solid #121212;
   border-radius: 4px;
   box-sizing: border-box;
-  padding: 0px;
-  width: 280px;
-  height: 180px;
+  outline: #121212;
+  transition: 0.4s;
 }
 
-.myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #e5710a; /*Shade darker than #ff7e0c check: "https://color-hex.org/color/ff7e0c" */
 }
 
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 10px;
+  margin-left: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  display: none;
+  overflow: hidden;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  font-size: 24px;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+/* Add a symbol to each button to indicate whether the collapsible content is open or closed: */
+
+
+.accordion:after {
+  content: "\00BB"; /* \00BB or \02795 Unicode character for "plus" sign (+) https://unicode-table.com/en/  */
+  color: #121212;
+  float: right;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 5px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 80px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.active:after {
+  content: "\00BB"; /* \2796 Unicode character for "minus" sign (-) https://unicode-table.com/en/  */
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 5px;
+  transform: rotate(270deg);
 }
 
 
@@ -345,17 +298,16 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+    background-color: #ff7e0c;
     margin: auto;
     padding: auto;
-    margin-top: 20px;
     font-size: 14px;
     border-top: 1px solid #ff7e0c;
 
 }
 
 .footer .links{
-    color: #ff7e0c;
+    color: #121212;-
     text-align: left;
     margin: auto;
     font-style: bold;
@@ -371,33 +323,43 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
 
 
 /*----------------------------------------------------------------------------- 
-10 - Responsive Design   
+10 - Link editing   
 -----------------------------------------------------------------------------*/
+a:link { color: #121212; 
+         text-decoration: none;}
+a:visited { color: #121212; /* dark/black colour rgba(18, 18, 18, 1) */
+            text-decoration: none;}
+a:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
+          text-decoration: none;}
+a:active { color:#121212; 
+           text-decoration: none;}
+/* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
-
-@media (max-width: 979px) {
+@media (max-width: 720px) {
     #header {
-       width: 720px;
+       width: 700px;
     }
 
     #container body {
-        width: 720px;
+        width: 700px;
         position: center;
         margin:  0 auto 0 auto;
     }
     h2 {    
         font-size: 24px;
-        color: blue;
     }
 
+    h3  {
+        font-size: 14px;
+        color: Green;
+    }
 
     .banner img {
         height: 320px;
         
     }
     .banner {
-        width: 720px;
-        background-color: #121212 ;
+        width: 700px;
     }
     .button {
         width: 130px;
@@ -429,23 +391,37 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
        width: 960px;
     }
 
-    #container {
+    #container body {
         width: 960px;
         position: center;
         margin:  0 auto 0 auto;
     }
     h2 {    
         font-size: 36px;
-        color: green;
+        position: left;
     }
 
+    h3  {
+        font-size: 20px;
+        color: #121212;
+    }
+
+    #FAQ_Body {
+
+        position: relative;
+        width: 860px;
+    }
+
+    .panel {
+        width: 820px;
+    }
 
     .banner img {
         max-height: 340px;
         
     }
     .banner {
-        width: 100%;
+        width: 960px;
     }
     
     .footer {
@@ -465,25 +441,13 @@ a.link:hover { color: #ff7e0c; /* orange colour rgba(255, 126, 12, 1)*/
         position: center;
         margin:  0 auto 0 auto;
     }
-    h2 {    
-        font-size: 36px;
-        color: red;
-    }
     .banner img {
         height: 340px;
         
     }
     .banner {
         width: 1360px;
-        background-color: #121212 ;
     }
-
-    .product_categories {
-    position: center;
-    margin-left:30% ;
-    width: 600px;
-      
-}
     
 
                         } /*End max-width: 1360px */
