@@ -77,10 +77,9 @@ h1 {
         padding: 10px;
         padding-top: 20px;
         color: #121212;
-        
-
 
 }
+
 h2 {    background-color: #fdfdfd;
         margin-top: 0px;
         padding-top: 40px;
@@ -147,7 +146,7 @@ h3 {
 }
 
 img.img_img:hover {
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .link {
@@ -505,11 +504,12 @@ a:active { color:#121212;
 
 @media only screen and (min-width:720px) and (max-width: 979px) {
     #header {
-       width: 860px;
+       width: 700px;
+
     }
 
     #container {
-        width: 860px;
+        width: 700px;
         position: center;
         margin:  0 auto 0 auto;
     }
@@ -530,7 +530,7 @@ a:active { color:#121212;
         
     }
     .banner {
-        width: 860px;
+        width: 700px;
     }
     .button {
         width: 160px;
@@ -584,7 +584,7 @@ a:active { color:#121212;
     }
 
     .banner img {
-        height: 340px;
+        height: 320px;
     }
     .banner {
         width: 960px;
@@ -649,6 +649,14 @@ a:active { color:#121212;
 
     .button span {        
         font-size: 20px;
+    }
+
+    h1 {    
+        font-size: 16px;
+        margin-top: 10px;
+        padding-top: 13px;
+        
+
     }
 
     h2 {

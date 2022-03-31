@@ -26,8 +26,12 @@ body {
        position: center;
        background-color: #fdfdfd;
        text-align: center;
+       height: 56px;
        font-family: 'Oswald', sans-serif;
        margin:  0 auto 0 auto;
+       border: solid;
+       border-color: #ff7e0c;
+       border-width: 2px 0 2px 0;
 }
 
 
@@ -38,7 +42,7 @@ body {
 
 #container {
 
-		background-color: #ff7e0c;
+		background-color: #fdfdfd;
 		position: center;
 		border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -71,36 +75,49 @@ body {
 h1 {    
         font-size: 13px;
         padding: 10px;
+        padding-top: 10px;
         color: #121212;
 
 
 }
-h2 {    background-color: #ff7e0c;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        padding-top: 10px;
-        padding-left: 50px;
-        padding-bottom: 0px;
-        color:  #121212;
-        font-size: 42px;
-        width:  auto;
-        border-radius: 0px;
-        font-family: 'Oswald', sans-serif; 
+
+h2 {    
+    background-color: #fdfdfd;
+    margin-top: 90px;
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-right: ;
+    margin-left: 100px;
+    color:  #121212;
+    font-size: 50px;
+    height: 100px;
+    width: 320px;
+    border-radius: 0px;
+    font-family: 'Oswald', sans-serif; 
 
 }
 
 h3 {
-    background-color: #ff7e0c;
+
+    background-color: #fdfdfd;
     color: yellow;
-    text-align: center;
-    margin-top: 10px;
+    text-align: left;
+    width: 960px;
+    margin-top: -3px;
     margin-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 50px;
+    padding-top: 40px;
     padding-bottom: 0px;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Oswald', sans-serif;
     white-space: nowrap;
+    border: solid;
+    border-color: #ff7e0c;
+    border-width: 2px 0 0 0; 
+}
+
+.about_us {
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -112,32 +129,34 @@ h3 {
   width: 48px;
 }
 
+.img__wrap_left img {
+    margin-left: 5px;
+    height: 62px;
+    width: 62px;
+}
+
 
 .img__description {
   position: absolute;
   text-align: center;
   height: 36px;
   width:  48px;
-  margin-top: 6px;
+  font-size: 12px;
+  margin-top: 18px;
+  margin-left: 12px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fdfdfd50;
   color: #121212;
-  visibility: hidden;
-  opacity: 0; 
-   z-index: 1;     
-   padding: 1em;     
-   margin: -1em;
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap_left:hover .img__description {
+img.img_img:hover {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .link {
@@ -161,7 +180,8 @@ h3 {
 
 
 .center {
-    position: center;
+    float: left;
+    /*position: center;*/
     max-width:  100%;
     padding: 0px;
 }
@@ -178,7 +198,13 @@ h3 {
 }
 
 .banner img {
-    height: 340px ;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding-left: 40px;
+    height: 200px ;
+    pointer-events: none;
+    
+
 }
 
 
@@ -219,7 +245,10 @@ h3 {
   content: "";
   display: table;
   clear: left;
+  text-decoration: none;
 }
+
+
 
 
 
@@ -240,7 +269,7 @@ h3 {
 }
 
 .footer .links{
-    color: #121212;-
+    color: #121212;
     text-align: left;
     margin: auto;
     font-style: bold;
@@ -280,6 +309,7 @@ a:active { color:#121212;
     }
     h2 {    
         font-size: 24px;
+        color: blue;
     }
 
     h3  {
@@ -318,7 +348,7 @@ a:active { color:#121212;
 
                         } /*End max-width: 720px */
 
-@media (min-width:980px) and (max-width: 1280px) {
+@media (min-width:980px) and (max-width: 1279px) {
     
     #header {
        width: 960px;
@@ -329,17 +359,20 @@ a:active { color:#121212;
         position: center;
         margin:  0 auto 0 auto;
     }
+
     h2 {    
-        font-size: 36px;
+        font-size: 50px;
+        color: green;
     }
 
     h3  {
-        font-size: 20px;
-        color: #121212;
+        font-size: 40px;
+        color: green;
+        width: 960px;
     }
 
     .banner img {
-        max-height: 340px;
+        height: 240px;
         
     }
     .banner {
@@ -353,22 +386,36 @@ a:active { color:#121212;
                         } /*End max-width: 1000px */
 
 
-@media  (min-width:1360px) and (max-width:1920px) {
+@media  (min-width:1280px) and (max-width:1920px) {
     #header {
-       width: 1360px; 
+       width: 1280px; 
     }
 
     #container body {
-        width: 1360px;
+        width: 1280px;
         position: center;
         margin:  0 auto 0 auto;
     }
     .banner img {
-        height: 340px;
+        height: 260px;
         
     }
     .banner {
-        width: 1360px;
+        width: 1280px;
+    }
+
+    h2 {
+
+    margin-top: 90px;
+    margin-left: 180px;
+    font-size: 68px;
+
+    }
+
+    h3  {
+        font-size: 40px;
+        color: green;
+        width: 1080px;
     }
     
 
