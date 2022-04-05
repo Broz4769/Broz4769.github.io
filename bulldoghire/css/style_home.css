@@ -25,7 +25,7 @@ body {
        position: center;
        background-color: #fdfdfd;
        text-align: center;
-       height: 65px;
+       height: 48px;
        font-family: 'Oswald', sans-serif;
        margin:  0 auto 0 auto;
        border: solid;
@@ -124,6 +124,44 @@ h3 {
     width: 72px;
     opacity: 0;
 }
+
+.img__wrap_right a {
+    float: right;
+    margin-top: 15px;
+
+}
+
+.social_links_W img {
+    float: right;
+    margin-top: -8px;
+    margin-right: 20px;
+    height: 34px;
+}
+
+a.social_links_W:hover { color: #40c351; 
+                            text-decoration: none;}
+
+.social_links_FB img {
+    float: right;
+    margin-top: -7px;
+    margin-right: 20px;
+    height: 32px;
+
+} /*https://www.facebook.com/brand/resources/facebookapp/logo*/
+
+a.social_links_FB:hover { color: #1877F2; 
+                            text-decoration: none;}
+
+
+.social_links_M img {
+    float: right;
+    margin-top: -6px;
+    margin-right: 20px;
+    height: 32px;
+}
+
+a.social_links_M:hover { color: #ff7e0c ; 
+                            text-decoration: none;}
 
 .img__description {
   position: absolute;
@@ -419,6 +457,9 @@ button {
     text-align: left;
     list-style-type: none;
 }
+
+a.icons:hover { color: #fdfdfd; 
+                            text-decoration: none;}
 
 
 /*----------------------------------------------------------------------------- 
