@@ -135,6 +135,40 @@ h3 {
     width: 62px;
 }
 
+.img__wrap_right a {
+    float: right;
+    margin-top: 17px;
+
+}
+
+.img__wrap_right a:hover {
+    opacity: 0.7; 
+    text-decoration: none;
+}
+
+.social_links_W img {
+    float: right;
+    margin-top: -8px;
+    margin-right: 10px;
+    height: 34px;
+}
+
+.social_links_FB img {
+    float: right;
+    margin-top: -7px;
+    margin-right: 10px;
+    height: 32px;
+
+} /*https://www.facebook.com/brand/resources/facebookapp/logo*/
+
+
+.social_links_M img {
+    float: right;
+    margin-top: -6px;
+    margin-right: 10px;
+    height: 32px;
+}
+
 
 .img__description {
   position: absolute;
