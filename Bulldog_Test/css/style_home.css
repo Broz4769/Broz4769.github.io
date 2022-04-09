@@ -81,18 +81,18 @@ h1 {
 }
 
 h2 {    background-color: #fdfdfd;
-        margin-top: 0px;
-        padding-top: 40px;
+        margin: auto;
+        padding: 20px;
         padding-left: 50px;
         color:  #121212;
         font-size: 40px;
         font-size: 2vmax;
-        height: 280px;
+        height: 320px;
         width:  auto;
         border-radius: 0px;
         border: solid;
         border-color: #ff7e0c;
-        border-width: 1px 0 0 0;
+        border-width: 2px 0 0 0;
         font-family: 'Oswald', sans-serif; 
 
 }
@@ -230,8 +230,6 @@ img.img_img:hover {
     margin-top: 15px;
     margin-left: 40px;
     padding-left: 40px;
-    max-height: 306px ;
-    pointer-events: none;
 
 }
 
@@ -501,24 +499,36 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
-@media only screen and (min-width:480px) and (max-width: 719px) {
+@media only screen and (min-width:480px) and (max-width: 720px) {
 
-#header {
-       width: 680px;
+    #header {
+       width: 90%;
+       height: 36px;
+       font-size: 1.5vmax;
     }
 
-    h1 {
-        font-size: 12px;
-    }
+
+    .social_links_W img {
+       height: 28px;
+}
+
+    .social_links_FB img, .social_links_M img{
+       height: 26px;
+}
+
 
     #container {
-        width: 680px;
+        width: 90%;
         position: center;
         margin:  0 auto 0 auto;
     }
-    h2 {    
-        
-        color: yellow;
+    h2 {   
+        padding-top: 30px;
+        color: blue;
+        width: 95%;
+        height: 80%;
+        font-size: 3.5vmax;
+
     }
 
     h3  {
@@ -533,7 +543,12 @@ a:active { color:#121212;
     }
 
     .banner {
-        width: 680px;
+        width: 90%;
+    }
+
+    .banner img {
+        width: 34vw;
+        min-width: 320px;
     }
 
     .button {
@@ -564,163 +579,131 @@ a:active { color:#121212;
 
 
 
+            }/*End max-width: 719px */
 
+@media only screen and (min-width:721px) and (max-width: 1079px) {
 
-                        }/*End max-width: 719px */
-
-
-@media only screen and (min-width:720px) and (max-width: 979px) {
     #header {
-       width: 700px;
-
+       width: 90%;
+       height: 36px;
+       font-size: 1.5vmax;
     }
 
+
+    .social_links_W img {
+       height: 28px;
+}
+
+    .social_links_FB img, .social_links_M img{
+       height: 26px;
+}
+
+
     #container {
-        width: 700px;
+        width: 90%;
         position: center;
         margin:  0 auto 0 auto;
     }
-    h2 {    
-        
+    h2 {   
+        padding-top: 30px;
         color: blue;
+        width: 95%;
+        height: 80%;
+        font-size: 3.5vmax;
+
     }
 
     h3  {
-        font-size: 20px;
-        color: blue;
-        margin-bottom: 30px;
+        font-size: 16px;
+        color: yellow;
     }
 
+    .column {
+        float: none;
+        padding: 0px;
+  
+    }
+
+    .banner {
+        width: 90%;
+    }
 
     .banner img {
-        
-        
+        width: 34vw;
+        min-width: 320px;
     }
-    .banner {
-        width: 700px;
-    }
+
     .button {
-        width: 160px;
+        width: 360px;
         padding: 10px;
         margin:  5px;
     }
      .button span {        
-        font-size: 13px;
+        font-size: 16px;
     }
-
-
     .dropdown-content {
-        width: 160px;
-        margin-left: 5px;
+        width: 180px;
+        margin-left: 280px;
+        margin-top: -45px;
         border: 1px solid #121212;
         border-radius: 4px;
-        font-size: 13px;
+        font-size: 18px;
     }
     .gallery-content img {
-        max-width: 100%;
-        margin: auto;
-        max-height: 460px;
-    
+    max-width: 90%;
+    margin: auto;
+    max-height: 400px;
     }
     
     .footer {
         font-size: 12px;
     }
-                        }/*End max-width: 979px */
 
-@media (min-width:980px) and (max-width: 1279px) {
+
+
+            }/*End max-width: 719px */
+
+
+@media only screen and (min-width:1080px) {
     
     #header {
-       width: 960px;
+       width: 80%; 
     }
 
     #container {
-        width: 960px;
-        position: center;
-        margin:  0 auto 0 auto;
-    }
-    h2 {    
-        
-        color: #121212;
-    }
-
-    h3  {
-        font-size: 20px;
-        color: #121212;
-        margin-bottom: 38px;
-    }
-
-    .banner img {
-        height: 320px;
-    }
-    .banner {
-        width: 960px;
-    }
-
-    .button {
-        width: 174px;
-        padding: 15px;
-        margin:  8px;
-    }
-     .button span {        
-        font-size: 17px;
-    }
-
-    .dropdown-content {
-        width: 174px;
-        margin-left: 5px;
-        border: 1px solid #121212;
-        border-radius: 4px;
-        font-size: 17px;
-  
-    }
-    .gallery-content img {
-    max-width: 90%;
-    }
-
-    .footer p {
-
-    }
-    
-    .footer {
-        font-size: 20px;
-        max-width: 960px;
-    }
-
-                        } /*End max-width: 1279px */
-
-
-@media (min-width:1280px) and (max-width:1920px) {
-    #header {
-       width: 1280px; 
-    }
-
-    #container {
-        width: 1280px;
+        width: 80%;
         position: center;
         margin:  0 auto 0 auto;
     }
 
+    .button_section {
+        width: 80%;
+
+    }
+
     .dropdown-content {
-        width: 240px;
-        margin-left: 5px;
-        border: 1px solid #121212;
-        border-radius: 4px;
-        font-size: 20px;
-    }
-
-    .banner img {
-        height: 320px;
-    }
-
-    .button {
         width: 224px;
+        margin-left: 5px;
+        border: 1px solid #121212;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+
+    .banner img {
+        max-height: 320px;
+        height: 100%;
+        width: 18vmax;
+    }
+
+    .button {
+        width: 100%;
         padding: 20px;
         margin:  15px;
     }
 
     .button span {        
         font-size: 20px;
+        padding: ;
     }
 
     h1 {    
@@ -733,7 +716,8 @@ a:active { color:#121212;
 
     h2 {
         color: #121212;
-        
+        max-height: 320px;
+
     }
 
     h3  {
