@@ -86,6 +86,7 @@ h2 {    background-color: #fdfdfd;
         padding-left: 50px;
         color:  #121212;
         font-size: 40px;
+        font-size: 2vmax;
         height: 280px;
         width:  auto;
         border-radius: 0px;
@@ -500,53 +501,66 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
-@media only screen and (min-width:480px) and (max-width: 719px) {
+
+/*----------------------------------------------------------------------------- 
+11 - Responsive Design   
+-----------------------------------------------------------------------------*/
+
+
+/*480p*/
+@media only screen and (min-width:640px) and (max-width: 854px) {
 
 #header {
-       width: 680px;
-    }
-
-    h1 {
-        font-size: 12px;
+       width: 90%;
     }
 
     #container {
-        width: 680px;
+        width: 100%;
         position: center;
         margin:  0 auto 0 auto;
     }
     h2 {    
-        font-size: 20px;
-        color: yellow;
+        font-size: 2.8vmax;
+        padding-top: 30px;
+        color: Green;
+        height: 224px;
     }
 
     h3  {
         font-size: 16px;
-        color: yellow;
+        color: Green;
     }
 
     .column {
-        float: none;
-        padding: 0px;
+        float: left;
+        padding-left: 60px;
   
     }
 
+    .banner img {
+        margin-top: 15px;
+        margin-left: 15px;
+        padding-left: 20px;
+        max-height: 240px ;
+        pointer-events: none;
+    }
     .banner {
-        width: 680px;
+        width: 100%;
     }
 
     .button {
-        width: 360px;
+        width: 400px;
+        align-content: left;
         padding: 10px;
         margin:  5px;
     }
      .button span {        
-        font-size: 16px;
+        font-size: 20px;
     }
     .dropdown-content {
         width: 180px;
-        margin-left: 280px;
-        margin-top: -45px;
+        margin-left: 420px;
+        margin-top: -50px;
         border: 1px solid #121212;
         border-radius: 4px;
         font-size: 18px;
@@ -565,10 +579,10 @@ a:active { color:#121212;
 
 
 
-                        }/*End max-width: 719px */
+                        }/*End 480p */
 
-
-@media only screen and (min-width:720px) and (max-width: 979px) {
+/*720p*/
+@media only screen and (min-width:855px) and (max-width: 1280px) {
     #header {
        width: 700px;
 
@@ -580,7 +594,7 @@ a:active { color:#121212;
         margin:  0 auto 0 auto;
     }
     h2 {    
-        font-size: 24px;
+        
         color: blue;
     }
 
@@ -625,71 +639,11 @@ a:active { color:#121212;
     .footer {
         font-size: 12px;
     }
-                        }/*End max-width: 979px */
-
-@media (min-width:980px) and (max-width: 1279px) {
-    
-    #header {
-       width: 960px;
-    }
-
-    #container {
-        width: 960px;
-        position: center;
-        margin:  0 auto 0 auto;
-    }
-    h2 {    
-        font-size: 32px;
-        color: #121212;
-    }
-
-    h3  {
-        font-size: 20px;
-        color: #121212;
-        margin-bottom: 38px;
-    }
-
-    .banner img {
-        height: 320px;
-    }
-    .banner {
-        width: 960px;
-    }
-
-    .button {
-        width: 174px;
-        padding: 15px;
-        margin:  8px;
-    }
-     .button span {        
-        font-size: 17px;
-    }
-
-    .dropdown-content {
-        width: 174px;
-        margin-left: 5px;
-        border: 1px solid #121212;
-        border-radius: 4px;
-        font-size: 17px;
-  
-    }
-    .gallery-content img {
-    max-width: 90%;
-    }
-
-    .footer p {
-
-    }
-    
-    .footer {
-        font-size: 20px;
-        max-width: 960px;
-    }
-
-                        } /*End max-width: 1279px */
+                        }/*End max-width: 720p */
 
 
-@media (min-width:1280px) and (max-width:1920px) {
+/*1080p*/
+@media (min-width:1281px) and (max-width:1920px) {
     #header {
        width: 1280px; 
     }
@@ -732,6 +686,7 @@ a:active { color:#121212;
 
     h2 {
         color: #121212;
+        
     }
 
     h3  {
