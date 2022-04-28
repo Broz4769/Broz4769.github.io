@@ -510,8 +510,8 @@ a:active { color:#121212;
 /*480p*/
 @media only screen and (min-width:640px) and (max-width: 854px) {
 
-#header {
-       width: 90%;
+    #header {
+       width: 100%;
     }
 
     #container {
@@ -553,13 +553,14 @@ a:active { color:#121212;
         align-content: left;
         padding: 10px;
         margin:  5px;
+        margin-left: 30px;
     }
      .button span {        
         font-size: 20px;
     }
     .dropdown-content {
         width: 180px;
-        margin-left: 420px;
+        margin-left: 440px;
         margin-top: -50px;
         border: 1px solid #121212;
         border-radius: 4px;
@@ -583,52 +584,70 @@ a:active { color:#121212;
 
 /*720p*/
 @media only screen and (min-width:855px) and (max-width: 1280px) {
+    
     #header {
-       width: 700px;
+       width: 95%;
 
     }
 
     #container {
-        width: 700px;
+        width: 95%;
         position: center;
         margin:  0 auto 0 auto;
     }
+
     h2 {    
-        
+        font-size: 2.9vmax;
+        padding-top: 30px;
+        height: 254px;
         color: blue;
     }
 
     h3  {
-        font-size: 20px;
+        font-size: 23px;
         color: blue;
         margin-bottom: 30px;
+        padding-left: 0px;
     }
 
 
     .banner img {
-        
-        
+        margin-top: 15px;
+        margin-left: 15px;
+        padding-left: 20px;
+        max-height: 270px ;
+        pointer-events: none;
     }
-    .banner {
-        width: 700px;
+
+    
+
+    .column {
+        float: none;
     }
+
     .button {
-        width: 160px;
-        padding: 10px;
-        margin:  5px;
+        width: 50vmax;
+        margin:  2px;
     }
+
      .button span {        
-        font-size: 13px;
+        font-size: 24px;
     }
 
 
     .dropdown-content {
-        width: 160px;
-        margin-left: 5px;
+        width: 25vmax;
+        margin-left: 400px;
+        margin-top: -70px;
         border: 1px solid #121212;
         border-radius: 4px;
-        font-size: 13px;
+        font-size: 22px;
     }
+
+    .button:hover span {
+        padding-right: 100px;
+    }
+
     .gallery-content img {
         max-width: 100%;
         margin: auto;
