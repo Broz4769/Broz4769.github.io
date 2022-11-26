@@ -11,7 +11,8 @@ Author: Bryan Bulling
 -----------------------------------------------------------------------------*/
 body {
 		
-		background-position: 250px 85px;
+		min-height: 100vh;
+        max-width: 100vw;
 		background-attachment: fixed;
 		-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
 		-moz-background-size: cover;
@@ -25,12 +26,12 @@ body {
        position: center;
        background-color: #fdfdfd;
        text-align: center;
-       height: 48px;
+       height: 50px;
        font-family: 'Oswald', sans-serif;
        margin:  0 auto 0 auto;
        border: solid;
        border-color: #ff7e0c;
-       border-width: 1px 0 0 0;
+       border-width: 2px 0 0 0;
 }
 
 
@@ -82,6 +83,7 @@ h1 {
 
 h2 {    background-color: #fdfdfd;
         margin-top: 0px;
+        margin-bottom: 0;
         padding-top: 40px;
         padding-left: 50px;
         color:  #121212;
@@ -92,7 +94,7 @@ h2 {    background-color: #fdfdfd;
         border-radius: 0px;
         border: solid;
         border-color: #ff7e0c;
-        border-width: 1px 0 0 0;
+        border-width: 2px 0 0 0;
         font-family: 'Oswald', sans-serif; 
 
 }
@@ -113,18 +115,20 @@ h3 {
 
 
 /* relevant styles */
-.kennel__wrap_left {
-  float: left;
-  position: relative;
-  height: 48px;
-  width: 48px;
-}
 
-.kennel__wrap_left img {
-    height: 72px;
-    width: 72px;
-    opacity: 0;
-}
+.menu__wrap_left {
+    float: left;
+    position: relative;
+    height: 48px;
+    width: 48px;
+  }
+  
+.menu__wrap_left img {
+    margin-left: 6px;
+    margin-top: 5px;
+    height: 52px;
+    width: 52px;
+  }
 
 .img__wrap_right a {
     float: right;
@@ -147,8 +151,10 @@ a.social_links_W:hover { color: #40c351;
     margin-top: -7px;
     margin-right: 20px;
     height: 32px;
+}
 
-} /*https://www.facebook.com/brand/resources/facebookapp/logo*/
+
+        /*https://www.facebook.com/brand/resources/facebookapp/logo*/
 
 a.social_links_FB:hover { color: #1877F2; 
                             text-decoration: none;}
@@ -170,14 +176,14 @@ a.social_links_M:hover { color: #ff7e0c ;
   height: 36px;
   width:  48px;
   font-size: 13px;
-  margin-top: 21px;
-  margin-left: 12px;
+  margin-top: 0px;
+  margin-left: 8px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   color: #121212;
-  opacity: 0;
+  opacity: 1;
   
 
   /* transition effect. not necessary */
@@ -278,6 +284,11 @@ img.img_img:hover {
 5 - button editing   
 -----------------------------------------------------------------------------*/
 
+.sectionstyle {
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    background-color: #fdfdfd;  
+}
 
 .button {
   
@@ -287,10 +298,7 @@ img.img_img:hover {
   text-align: center;
   display: inline-block;
   padding: 20px;
-  margin:  10px;
-  width: 252px;
-  border: 1px solid #121212;
-  border-radius: 4px;
+  width: 20%;
   box-sizing: border-box;
   transition: all 0.2s;
   cursor: pointer;
@@ -446,7 +454,7 @@ button {
 }
 
 .footer .links{
-    color: #121212;-
+    color: #121212;
     text-align: left;
     margin: auto;
     font-style: bold;
@@ -461,10 +469,6 @@ button {
     list-style-type: none;
 }
 
-.footer p {
-
-}
-
 .list_float {
     float: left;
     
@@ -477,10 +481,6 @@ button {
     text-align: left;
     padding-left: 20px;
     font-size: 12px;
-}
-
-.icons {
-    
 }
 
 
@@ -507,7 +507,7 @@ a:active { color:#121212;
 -----------------------------------------------------------------------------*/
 
 
-/*480p*/
+/*480p Green TEXT*/
 @media only screen and (min-width:640px) and (max-width: 854px) {
 
     #header {
@@ -582,7 +582,7 @@ a:active { color:#121212;
 
                         }/*End 480p */
 
-/*720p*/
+/*720p BLUE TEXT*/
 @media only screen and (min-width:855px) and (max-width: 1280px) {
     
     #header {
@@ -661,12 +661,21 @@ a:active { color:#121212;
                         }/*End max-width: 720p */
 
 
-/*1080p*/
+/*1080p BLACK TEXT*/
 @media (min-width:1281px) and (max-width:1920px) {
     #header {
        width: 1280px; 
     }
 
+    /*OPACITY - HIDING ELEMENTS - RESPONSIVE WOOOOWOWOWO*/
+    .menu__wrap_left {
+        opacity: 1;
+    }
+    .img__description {
+        opacity: 1;
+    }
+
+    
     #container {
         width: 1280px;
         position: center;
@@ -688,7 +697,6 @@ a:active { color:#121212;
     .button {
         width: 224px;
         padding: 20px;
-        margin:  15px;
     }
 
     .button span {        
