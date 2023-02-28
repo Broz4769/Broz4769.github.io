@@ -1,4 +1,8 @@
-/* 1. Gallery */
+/* 1. Menu Tab */
+
+
+
+/* 2. Gallery */
 
 var slideIndex = 0;
 carousel();
@@ -30,5 +34,6 @@ function carousel() {
         img.style.transform = "scale(1)";
         img.style.transition = "transform 0.25s ease";
       }
+
 
 

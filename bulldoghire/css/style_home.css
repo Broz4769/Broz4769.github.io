@@ -121,7 +121,10 @@ h3 {
     position: relative;
     height: 48px;
     width: 48px;
+    cursor: pointer;
   }
+
+
   
 .menu__wrap_left img {
     margin-left: 6px;
@@ -184,6 +187,7 @@ a.social_links_M:hover { color: #ff7e0c ;
   right: 0;
   color: #121212;
   opacity: 1;
+  cursor: pointer;
   
 
   /* transition effect. not necessary */
@@ -333,8 +337,59 @@ img.img_img:hover {
   right: 0;
 }
 
+/*1 Style the Dropdown Menu */
 
-/* Style The Dropdown Button */
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu-content {
+    display: none;
+    color: #121212;
+    position: absolute;
+    width: 800px;
+    margin-top: -10px;
+    margin-left: 5px;
+    background-color: #fdfdfd;
+    box-shadow: 0px 8px 16px 0px #121212;
+    z-index: 1;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-menu-content a{
+    color: #121212;
+    display: block;
+    text-align: left;
+    
+  }
+
+  .dropdown-menu-content li{
+    list-style: none;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-menu-content a:hover {
+      color: #ff7e0c;
+      text-decoration: none;
+  }
+
+  
+  
+  /* Show the dropdown menu on hover container is 1280px */ 
+  .dropdown-menu:hover .dropdown-menu-content{
+    pointer-events: auto;
+    display:block;
+    width: 400px;
+    
+    
+  }
+
+
+
+/*2 Style The Dropdown Buttons */
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -348,6 +403,7 @@ img.img_img:hover {
   color: #121212;
   position: absolute;
   width: 260px;
+  height: auto;
   margin-left: 5px;
   background-color: #fdfdfd;
   box-shadow: 0px 8px 16px 0px #121212;
@@ -357,6 +413,7 @@ img.img_img:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a{
+  
   color: #121212;
   padding: 10px 14px;
   text-decoration: none;
@@ -620,6 +677,9 @@ a:active { color:#121212;
     }
 
     
+    .sectionstyle {
+            display: none;
+    }
 
     .column {
         float: none;
@@ -675,11 +735,23 @@ a:active { color:#121212;
         opacity: 1;
     }
 
+    .menu__wrap_left {
+        display: yes;
+    }
     
     #container {
         width: 1280px;
         position: center;
         margin:  0 auto 0 auto;
+    }
+    
+    .dropdown-menu-content {
+        display: yes;
+        width: 240px;
+        margin-left: 5px;
+        border: 1px solid #121212;
+        border-radius: 4px;
+        font-size: 20px;
     }
 
     .dropdown-content {
