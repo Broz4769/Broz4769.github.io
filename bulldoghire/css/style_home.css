@@ -607,8 +607,6 @@ a:active { color:#121212;
         display: none;
     }
 
-    #body {
-    }
 
     h4  {
 
@@ -665,12 +663,16 @@ a:active { color:#121212;
                         }/*End 480p */
 
 /*720px BLUE TEXT*/
-@media only screen and (min-width:720px) and (max-width: 1280px) {
+@media only screen and (min-width:720px) and (max-width: 1024px) {
     
     #header {
        width: 95%;
 
     }
+    a.social_links_FB,a.social_links_M,a.social_links_W {
+        text-indent: -9999px;
+    }
+
 
     #container {
         width: 95%;
@@ -747,7 +749,7 @@ a:active { color:#121212;
 
 
 /*1080p BLACK TEXT*/
-@media (min-width:1281px) and (max-width:1920px) {
+@media (min-width:1025px) and (max-width:1920px) {
     #header {
        width: 1280px; 
     }
