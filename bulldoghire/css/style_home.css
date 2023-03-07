@@ -88,7 +88,6 @@ h2 {    background-color: #fdfdfd;
         padding-left: 50px;
         color:  #121212;
         font-size: 40px;
-        font-size: 2vmax;
         height: 280px;
         width:  auto;
         border-radius: 0px;
@@ -714,32 +713,38 @@ a:active { color:#121212;
         position: center;
         margin:  0 auto 0 auto;
     }
-
     
-
-    h2 {    
-        font-size: 2.9vmax;
-        padding-top: 30px;
-        height: 254px;
-        color: blue;
-    }
-
-    h3  {
-        font-size: 23px;
-        color: blue;
-        margin-bottom: 30px;
-        padding-left: 0px;
-    }
-
-
-    .banner img {
-        margin-top: 15px;
-        margin-left: 15px;
-        padding-left: 20px;
-        max-height: 270px ;
+    .center img, .banner img {
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-left: 5px;
+        padding-right: 0px;
+        min-height: 367px;
+        width: 403px;
         pointer-events: none;
     }
 
+    h2 {    
+        font-size: 3.1vmax;
+        padding-top: 15%;
+        margin-bottom: -100px;
+        text-align: center;
+        height: 300px;
+        color: blue;
+
+    }
+
+    h3  {
+        
+        font-size: 30px;
+        color: blue;
+        background-color: #ff7e0c;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-top: 2px;
+        border-top: 2px solid #121212;
+    }
     
     .sectionstyle {
             display: none;
@@ -772,10 +777,16 @@ a:active { color:#121212;
         padding-right: 100px;
     }
 
+    .gallery-content {
+
+        min-height: 680px;
+
+    }
+
     .gallery-content img {
         max-width: 100%;
         margin: auto;
-        max-height: 460px;
+        max-height: 680px;
     
     }
     
@@ -849,6 +860,7 @@ a:active { color:#121212;
 
     h2 {
         color: #121212;
+        font-size: 46px;
         
     }
 
