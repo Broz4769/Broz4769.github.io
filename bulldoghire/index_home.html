@@ -32,17 +32,20 @@
 
 		<div class="menu__wrap_left">
 			<div class="dropdown-menu" >
-			<img src="images/icons/menu_icon/icons8-menu-96.png" alt="Bulldog Menu"><p class="img_menu_description">MENU</p>
+			<img src="images/icons/menu_icon/icons8-menu-96.png" alt="Bulldog Menu"><p class="img_menu_description ModalmenuBtn">MENU</p>
+				<!-- Trigger/Open The dropwdown and Modal -->
 				<div class="dropdown-menu-content">
 				<ul>
     				<li><a href="about_us/index_about_us.html">About</a></li>
     				<li><a href="contact_us/index_contact_us.html">Contact</a></li>
 				</ul>
-				</div>
-				</div>
+			    </div>
+			</div>
 		</div><!--img__wrap_left-->
 		
-	<!--<div class="kennel__wrap_left">
+		<!--<button class="menu__wrap_left">Open Modal</button>-->
+	
+		<!--<div class="kennel__wrap_left">
 		<a href="file:///C:/Users/Bryan/Desktop/COURSES/bulldoghire/index_home.html"
 		><img src="images/icons/dog_house_icon/icons8-dog-house-96" alt="Dog Home Button" class="img_img" align="left"><p class="img__description">HOME</p></a></div>
 		
@@ -72,10 +75,22 @@
 
 	</div><!--header-->
 
+	<!--The Modal Menu-->
+	<div id="myModal" class="Modalmenu">
 
+		<!--The Modal Menu Content-->
+		<div class="Modalmenucontent">
+		<span class="menuclose">&times;</span>
+		<p>Some text in the Modal..</p>
+		<a href="about_us/index_about_us.html" class="yes">About</a> <br>
+		<a href="contact_us/index_contact_us.html" class="yes">Contact</a>
+		</div>
+
+	</div><!--End Modal-->
 	
 
 	<div id="container">
+
 
 		<div class="banner">
       		<!-- Button to reset the Image size -->
@@ -85,8 +100,11 @@
 
 		</div><!--banner-->
 
-		<h2>THE NEW BIG EVENT HIRE DOG IN TOWN <br><br> CALL US TODAY </h2>
-		
+		<h2>THE NEW BIG EVENT HIRE DOG IN TOWN <br><br> <span style="color:black">CALL</span> US TODAY </h2>
+
+		<div id="menu_container">
+
+		</div>
 		
 		<h4>Please use a device with a minumum resolution width of 720 pixels <br> we apologise for any inconvience. </h4>
 	
@@ -194,6 +212,8 @@
   		</div><!--End acknowledgement-->
 
 	</div><!--Container-->
-	<script src="javascript/script.js"></script>
+	<script src="javascript/menuscript.js"></script>
+	<script src="javascript/galleryscript.js"></script>
+	
 </body>
 </html>

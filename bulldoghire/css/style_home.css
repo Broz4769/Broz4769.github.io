@@ -137,7 +137,10 @@ h4 {
   }
 
 
-  
+button.menu__wrap_left {
+    margin-left: 0px;
+}
+
 .menu__wrap_left img {
     margin-left: 6px;
     margin-top: 5px;
@@ -398,13 +401,49 @@ img.img_img:hover {
     pointer-events: auto;
     display:block;
     width: 400px;
-    
-    
+  }
+
+/*2 Style The modal Menu Button */
+
+/* The Modal (background) */
+.Modalmenu {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+/* Modal Content/Box */
+.Modalmenucontent {
+    background-color: #fdfdfd;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #121212;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+/* The Close Button */
+.menuclose {
+    color: #ff7e0c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.menuclose:hover, .menuclose:focus {
+    color: #121212;
+    text-decoration: none;
+    cursor: pointer;
   }
 
 
-
-/*2 Style The Dropdown Buttons */
+/*3 Style The Dropdown Buttons */
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -480,7 +519,7 @@ corresponding value from the list below*/
 }
 
 .gallery-content img {
-    position: center;
+    position:relative;
     margin: auto;
     max-width: 100%;
     max-height: 450px;
@@ -699,6 +738,11 @@ a:active { color:#121212;
         opacity: 1;
         cursor: pointer;
     }
+   
+  /* Hide dropdown menu on hover container in phone mode*/ 
+  .dropdown-menu:hover .dropdown-menu-content{
+    display: none;
+  }
 
     a.social_links_FB,a.social_links_M,a.social_links_W {
         text-indent: -9999px;
@@ -785,7 +829,8 @@ a:active { color:#121212;
 
     .gallery-content img {
         max-width: 100%;
-        margin: auto;
+        position: relative;
+        
         max-height: 680px;
     
     }
@@ -806,13 +851,22 @@ a:active { color:#121212;
     .menu__wrap_left {
         opacity: 1;
     }
-    .img_menu_description {
+
+    p.img_menu_description {
         opacity: 1;
+        display: block;
+    }
+
+    /*Hide Modal on larger screen resolution*/
+    #myModal, .Modalmenu, .Modalmenucontent, .menuclose {
+        display: none;
+        opacity: 0;
     }
 
     .menu__wrap_left {
         display: yes;
     }
+
     
     #container {
         width: 1280px;
