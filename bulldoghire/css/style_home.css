@@ -797,6 +797,32 @@ a:active { color:#121212;
     .column {
         float: none;
     }
+    /*Edit the Modal Options*/
+    .Modalmenucontent {
+        margin-top: 5px;
+        width: 90%;
+        height: 75%;
+        text-align: center;
+    }
+
+    a.Modalmenulinks {
+        position: relative;
+        width: 100px;
+        font-size: 30px;
+        box-sizing: 20px; 
+    }
+    /*add line between a elements*/
+    p.linebreak {
+        border-top: 3px double #ff7e0c;
+        width: 300px;
+        text-align: center;
+        margin-left: 27%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span.menuclose {
+        font-size: 40px;
+    }
 
     .button {
         width: 50vmax;
