@@ -769,19 +769,22 @@ a:active { color:#121212;
     }
 
     h2 {    
-        font-size: 3.1vmax;
-        padding-top: 15%;
-        margin-bottom: -100px;
+        font-size: 250%;/*3.1vmax;*/ 
+        font-weight: 200;
+        padding-top: 10%;
+        padding-bottom: 1%;
+        margin-bottom: 0px;
         text-align: center;
         height: 300px;
-        color: blue;
+        color: #121212;
 
     }
 
     h3  {
         
-        font-size: 30px;
-        color: blue;
+        font-size: 250%;/*30px;*/
+        font-weight: 200;
+        color: #121212;
         background-color: #ff7e0c;
         margin-bottom: 30px;
         padding-left: 0px;
