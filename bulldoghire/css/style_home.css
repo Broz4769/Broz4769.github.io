@@ -748,7 +748,7 @@ a:active { color:#121212;
 
     .social_links_FB img, .social_links_M img, .social_links_W img {
         height: 40px;
-        
+        margin-right: 5px;
     }
 
     #container {
@@ -775,7 +775,7 @@ a:active { color:#121212;
         font-weight: 200;
         padding-bottom: 1%;
         margin-bottom: 0px;
-        margin-left: -40px;
+        margin-left: -50px;
         text-align: center;
         width: 100%;
         height: auto;
