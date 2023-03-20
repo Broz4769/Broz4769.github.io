@@ -148,10 +148,10 @@ button.menu__wrap_left {
     width: 52px;
   }
 
+/*adjust height above social media icons*/
 .img__wrap_right a {
     float: right;
-    margin-top: 15px;
-
+    margin-top: 20px;
 }
 
 .social_links_W img {
@@ -168,7 +168,7 @@ a.social_links_W:hover { color: #40c351;
     float: right;
     margin-top: -7px;
     margin-right: 20px;
-    height: 32px;
+    height: 34px;
 }
 
 
@@ -182,7 +182,7 @@ a.social_links_FB:hover { color: #1877F2;
     float: right;
     margin-top: -6px;
     margin-right: 20px;
-    height: 32px;
+    height: 34px;
 }
 
 a.social_links_M:hover { color: #ff7e0c ; 
@@ -354,94 +354,6 @@ img.img_img:hover {
   opacity: 1;
   right: 0;
 }
-
-/*1 Style the Dropdown Menu */
-
-.dropdown-menu {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-menu-content {
-    display: none;
-    color: #121212;
-    position: absolute;
-    width: 800px;
-    margin-top: -10px;
-    margin-left: 5px;
-    background-color: #fdfdfd;
-    box-shadow: 0px 8px 16px 0px #121212;
-    z-index: 1;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-menu-content a{
-    color: #121212;
-    display: block;
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    
-  }
-
-  .dropdown-menu-content li{
-    list-style: none;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-menu-content a:hover {
-      color: #ff7e0c;
-      text-decoration: none;
-  }
-
-  
-  
-  /* Show the dropdown menu on hover container is 1280px */ 
-  .dropdown-menu:hover .dropdown-menu-content{
-    pointer-events: auto;
-    display:block;
-    width: 300px;
-  }
-
-/*2 Style The modal Menu Button */
-
-/* The Modal (background) */
-.Modalmenu {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-/* Modal Content/Box */
-.Modalmenucontent {
-    background-color: #fdfdfd;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #121212;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-
-/* The Close Button */
-.menuclose {
-    color: #ff7e0c;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-.menuclose:hover, .menuclose:focus {
-    color: #121212;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
 
 /*3 Style The Dropdown Buttons */
@@ -796,10 +708,11 @@ h3:hover a{ color:#121212;
 
     /*----------------END OF SIDE BAR CSS-----------------------*/
    
-  /* Hide dropdown menu on hover container in phone mode*/ 
-  .dropdown-menu:hover .dropdown-menu-content{
-    display: none;
-  }
+   /*adjust height above social media icons*/
+   .img__wrap_right a {
+    margin-top: 15px;
+
+    }
 
     a.social_links_FB,a.social_links_M,a.social_links_W {
         text-indent: -9999px;
@@ -867,45 +780,6 @@ h3:hover a{ color:#121212;
     .column {
         float: none;
     }
-    
-    /*Edit the Modal Options*/
-    .Modalmenucontent {
-        margin-top: 5px;
-        width: 90%;
-        height: 90%;
-        text-align: center;
-    }
-    .Menubox {
-        align-content: center;
-        padding-left: 20%;
-        width: 60%;
-    }
-
-    a.Modalmenulinks {
-        position: relative;
-        width: 100px;
-        font-size: 100%;/*30px;*/
-        box-sizing: 20px; 
-    }
-    /*add line between a elements*/
-    p.topbreak {
-        position: relative;
-        font-size: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    p.linebreak {
-        border-top: 3px double #ff7e0c;
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    span.menuclose {
-        font-size: 40px;
-    }
 
     .button {
         width: 50vmax;
@@ -950,10 +824,16 @@ h3:hover a{ color:#121212;
                         }/*End max-width: 720p */
 
 
+
+
+
+
+
 /*1080p BLACK TEXT*/
 @media (min-width:1025px) and (max-width:1920px) {
     #header {
-       width: 1280px; 
+       width: 1280px;
+       height: 60px;
     }
 
     /*OPACITY - HIDING ELEMENTS - RESPONSIVE WOOOOWOWOWO*/
@@ -964,17 +844,25 @@ h3:hover a{ color:#121212;
     p.img_menu_description {
         opacity: 1;
         display: block;
+        font-size: 16px;
+        
     }
-
-    /*Hide Modal on larger screen resolution*/
-    #myModal, .Modalmenu, .Modalmenucontent, .menuclose {
-        display: none;
-        opacity: 0;
+    .dropdown-menu img {
+        width: 60px;
+        height: 60px;
+        padding-top: 2px;
+        
+    }
+    .img_menu_description {
+        height: 60px;
+        width:  60px;
+        margin-left: 6px;
     }
 
     .menu__wrap_left {
         display: yes;
     }
+
 
     /*-----------------------Start SideNav CSS-------------------------*/
     /* The side navigation menu */
@@ -1032,25 +920,6 @@ h3:hover a{ color:#121212;
         position: center;
         margin:  0 auto 0 auto;
     }
-    
-    .dropdown-menu-content {
-        display: none;
-        width: 20px;
-        margin-left: 5px;
-        padding-left: 30px;
-        border: 1px solid #121212;
-        border-radius: 4px;
-        font-size: 24px;
-        
-        
-    }
-    .dropdown-menu-content li{
-        padding: 5px;
-        text-decoration: 2px dotted underline #ff7e0c;
-        
-        
-    }
-    
 
     .dropdown-content {
         width: 240px;
