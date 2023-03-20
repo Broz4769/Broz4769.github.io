@@ -26,25 +26,49 @@
 </head> <!------------------------------HEADER END------------------------>
 
 <!----------------------------------BODY STARTS--------------------------------------->
-<body>
+<body id="main">
 	
 	
 	<div id="header">
 
 		<div class="menu__wrap_left">
 			<div class="dropdown-menu" >
-			<img src="images/icons/menu_icon/icons8-menu-96.png" alt="Bulldog Menu"><p class="img_menu_description ModalmenuBtn">MENU</p>
-				<!-- Trigger/Open The dropwdown and Modal -->
+			<!--<img src="images/icons/menu_icon/icons8-menu-96.png" alt="Bulldog Menu"><p class="img_menu_description ModalmenuBtn">MENU</p>-->
+			<img src="images/icons/menu_icon/icons8-menu-96.png" alt="Bulldog Menu"><p onclick="openNav();openNav_responsive() " class="img_menu_description">MENU</p>
+				<!--SideMenu Bar Cooler Sidenav 1080p-->
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+		 		 </div>
+				 <!--SideMenu Bar Cooler Sidenav Mobile Responsive 100%-->
+				  <div id="mySidenav_responsive" class="sidenav_responsive">
+					<a href="javascript:void(0)" class="closebtn_responsive" onclick="closeNav_responsive()">&times;</a>
+					<a href="#">About_responsive</a>
+					<a href="#">Services_responsive</a>
+					<a href="#">Clients_responsive</a>
+					<a href="#">Contact_responsive</a>
+		 		 </div>
+
+			<!-- Trigger/Open The dropwdown and Modal 
 				<div class="dropdown-menu-content">
 				<ul>
-    				<li><a href="about_us/index_about_us.html">About</a></li>
+    				<li><a href="about_us/index_about_us.html">About Us</a></li>
+					<li><a href="our_products/index_our_products.html">Our Products</a></li>
+					<li><a href="our_products/Bulldog Price List 2022.pdf" target="blank">View Pricelist (PDF)</a></li>
     				<li><a href="contact_us/index_contact_us.html">Contact</a></li>
 				</ul>
-			    </div>
+			    </div>-->
 			</div>
 		</div><!--img__wrap_left-->
 		
-		<!--<button class="menu__wrap_left">Open Modal</button>-->
+		
+
+		
+		<!--<button class="menu__wrap_left"><span onclick="openNav()">open</span></button>-->
+		<!--<button1 class="menu__wrap_left"><span onclick="openNav_responsive()">open</span></button1>-->
 	
 		<!--<div class="kennel__wrap_left">
 		<a href="file:///C:/Users/Bryan/Desktop/COURSES/bulldoghire/index_home.html"
@@ -76,6 +100,7 @@
 
 	</div><!--header-->
 
+
 	<!--The Modal Menu-->
 	<div id="myModal" class="Modalmenu">
 
@@ -95,7 +120,8 @@
 		</div><!--End Menu Box-->
 	  </div><!--End Modal Menu Content-->
 
-	</div><!--End Modal-->
+	</div><!--End Modal--> 
+     
 	
 
 	<div id="container">
@@ -109,7 +135,7 @@
 
 		</div><!--banner-->
 		
-		<h2>THE NEW BIG EVENT HIRE DOG IN TOWN</h2>
+		<h2>THE BIG EVENT HIRE DOG IN TOWN</h2>
 
 		<div id="menu_container">
 
@@ -153,7 +179,7 @@
 
 	</section><!--End Button Section-->
 		
-	<h3> Contact Us Today For A Free Quote</h3>
+	<h3> <a href="contact_us/index_contact_us.html" class="a_contact">Contact Us</a> Today For A Free Quote</h3>
 
 	<!--Gallery & Events-->
 		
@@ -184,7 +210,7 @@
 		<div class="footer">
 			
 			<ul class="list_float">
-				<p><b>COMPANY</b></p>
+				<p><b>Customer Care</b></p>
 				<li><a href="about_us/index_about_us.html" target="_blank" class="links">About Us</a></li>
   				<li><a href="contact_us/index_contact_us.html" target="_blank" class="links">Contact Us</a></li>
   				<li><a href="our_products/index_our_products.html" target="_blank" class="links">Our Products</a></li>
@@ -225,6 +251,8 @@
 	<p id="demo"></p>
 	<script src="javascript/menuscript.js"></script>
 	<script src="javascript/galleryscript.js"></script>
+	<script src="javascript/sidenavmenu.js"></script>
+	<script src="javascript/sidenavmenu_responsive.js"></script>
 	<script src="javascript/viewportscript.js"></script>
 	
 </body>

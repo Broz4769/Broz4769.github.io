@@ -381,6 +381,7 @@ img.img_img:hover {
     color: #121212;
     display: block;
     text-align: left;
+    font-family: 'Oswald', sans-serif;
     
   }
 
@@ -400,7 +401,7 @@ img.img_img:hover {
   .dropdown-menu:hover .dropdown-menu-content{
     pointer-events: auto;
     display:block;
-    width: 400px;
+    width: 300px;
   }
 
 /*2 Style The modal Menu Button */
@@ -610,6 +611,8 @@ a:hover { color: #ff7e0c;
           text-decoration: none;}
 a:active { color:#121212; 
            text-decoration: none;}
+h3:hover a{ color:#121212;
+                   text-decoration: underline;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
 
@@ -736,6 +739,62 @@ a:active { color:#121212;
         opacity: 1;
         cursor: pointer;
     }
+    /*-----------------------Start SideNav CSS-------------------------*/
+    /* The side navigation menu */
+    .sidenav_responsive {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+  
+    /* The navigation menu links */
+    .sidenav_responsive a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+  
+    /* When you mouse over the navigation links, change their color */
+    .sidenav_responsive a:hover {
+        color: #f1f1f1;
+    }
+  
+    /* Position and style the close button (top right corner) */
+    .sidenav_responsive .closebtn_responsive {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+  
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    }
+  
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+     @media screen and (max-height: 450px) {
+        .sidenav_responsive {padding-top: 15px;}
+        .sidenav_responsive a {font-size: 18px;}
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    /*----------------END OF SIDE BAR CSS-----------------------*/
    
   /* Hide dropdown menu on hover container in phone mode*/ 
   .dropdown-menu:hover .dropdown-menu-content{
@@ -808,6 +867,7 @@ a:active { color:#121212;
     .column {
         float: none;
     }
+    
     /*Edit the Modal Options*/
     .Modalmenucontent {
         margin-top: 5px;
@@ -872,16 +932,16 @@ a:active { color:#121212;
 
     .gallery-content {
 
-        height: auto;
+        height: 300px;
+        padding-top: 0px;
+        padding-bottom: 2px;
 
     }
 
     .gallery-content img {
-        max-width: 100%;
+        width: 99%;
         position: relative;
-        
-        max-height: 680px;
-    
+        height: 300px;
     }
     
     .footer {
@@ -916,6 +976,56 @@ a:active { color:#121212;
         display: yes;
     }
 
+    /*-----------------------Start SideNav CSS-------------------------*/
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+  
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+  
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+  
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+  
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    }
+
+    .sidenav_responsive {
+        display: none;
+    }
+  
+    /*----------------END OF SIDE BAR CSS-----------------------*/
     
     #container {
         width: 1280px;
@@ -924,13 +1034,23 @@ a:active { color:#121212;
     }
     
     .dropdown-menu-content {
-        display: yes;
-        width: 240px;
+        display: none;
+        width: 20px;
         margin-left: 5px;
+        padding-left: 30px;
         border: 1px solid #121212;
         border-radius: 4px;
-        font-size: 20px;
+        font-size: 24px;
+        
+        
     }
+    .dropdown-menu-content li{
+        padding: 5px;
+        text-decoration: 2px dotted underline #ff7e0c;
+        
+        
+    }
+    
 
     .dropdown-content {
         width: 240px;
@@ -945,8 +1065,9 @@ a:active { color:#121212;
     }
 
     .button {
-        width: 224px;
+        width: 230px;
         padding: 20px;
+        padding-left: 60px;
     }
 
     .button span {        
@@ -964,6 +1085,8 @@ a:active { color:#121212;
     h2 {
         color: #121212;
         font-size: 46px;
+        padding-top: 10%;
+        height: 195px;
         
     }
 
