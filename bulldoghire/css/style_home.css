@@ -616,8 +616,9 @@ h3:hover a{ color:#121212;
 /*Min Viewport width of 360px up to 1024px - Mobile View BLUE TEXT*/
 @media only screen and (min-width:361px) and (max-width: 1024px) {
     
+    
     #header {
-       width: 99%;
+       width: 95%;
        height: 60px;
        padding-bottom: 2px;
        border-radius: 0px;
@@ -695,11 +696,9 @@ h3:hover a{ color:#121212;
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 1px;
     }
-    .sidenav_responsive {
-        display: none;
-    }
+    
     
 
 
@@ -726,7 +725,7 @@ h3:hover a{ color:#121212;
     }
 
     #container {
-        width: 99%;
+        width: 95%;
         position: center;
         margin:  0 auto 0 auto;
     }
