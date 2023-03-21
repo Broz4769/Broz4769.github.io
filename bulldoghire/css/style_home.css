@@ -81,7 +81,8 @@ h1 {
 
 }
 
-h2 {    background-color: #fdfdfd;
+h2 {    
+        background-color: #fdfdfd;
         margin-top: 0px;
         margin-bottom: 0;
         padding-top: 40px;
@@ -90,10 +91,6 @@ h2 {    background-color: #fdfdfd;
         font-size: 40px;
         height: 280px;
         width:  auto;
-        border-radius: 0px;
-        border: solid;
-        border-color: #ff7e0c;
-        border-width: 2px 0 0 0;
         font-family: 'Oswald', sans-serif; 
 
 }
@@ -620,8 +617,13 @@ h3:hover a{ color:#121212;
 @media only screen and (min-width:361px) and (max-width: 1024px) {
     
     #header {
-       width: 95%;
+       width: 99%;
        height: 60px;
+       padding-bottom: 2px;
+       border-radius: 0px;
+       border: solid;
+       border-color: #ff7e0c;
+       border-width: 3px 0 3px 0;
     }
     .menu__wrap_left {
         width: 60px;
@@ -653,7 +655,7 @@ h3:hover a{ color:#121212;
     }
     /*-----------------------Start SideNav CSS-------------------------*/
     /* The side navigation menu */
-    .sidenav_responsive {
+    .sidenav {
         height: 100%; /* 100% Full-height */
         width: 0; /* 0 width - change this with JavaScript */
         position: fixed; /* Stay in place */
@@ -667,7 +669,7 @@ h3:hover a{ color:#121212;
     }
   
     /* The navigation menu links */
-    .sidenav_responsive a {
+    .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
@@ -677,12 +679,12 @@ h3:hover a{ color:#121212;
     }
   
     /* When you mouse over the navigation links, change their color */
-    .sidenav_responsive a:hover {
+    .sidenav a:hover {
         color: #f1f1f1;
     }
   
     /* Position and style the close button (top right corner) */
-    .sidenav_responsive .closebtn_responsive {
+    .sidenav .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
@@ -695,16 +697,11 @@ h3:hover a{ color:#121212;
     transition: margin-left .5s;
     padding: 20px;
     }
-  
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-     @media screen and (max-height: 450px) {
-        .sidenav_responsive {padding-top: 15px;}
-        .sidenav_responsive a {font-size: 18px;}
-    }
-
-    .sidenav {
+    .sidenav_responsive {
         display: none;
     }
+    
+
 
     /*----------------END OF SIDE BAR CSS-----------------------*/
    
@@ -729,7 +726,7 @@ h3:hover a{ color:#121212;
     }
 
     #container {
-        width: 95%;
+        width: 99%;
         position: center;
         margin:  0 auto 0 auto;
     }
@@ -834,6 +831,11 @@ h3:hover a{ color:#121212;
     #header {
        width: 1280px;
        height: 60px;
+       padding-bottom: 2px;
+       border-radius: 0px;
+       border: solid;
+       border-color: #ff7e0c;
+       border-width: 3px 0 3px 0;
     }
 
     /*OPACITY - HIDING ELEMENTS - RESPONSIVE WOOOOWOWOWO*/
