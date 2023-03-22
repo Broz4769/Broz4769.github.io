@@ -395,23 +395,6 @@ img.img_img:hover {
   display: block;
 }
 
-.element {
-    position: relative;
-}
- 
-/*replace the content value with the
-corresponding value from the list below*/
- 
-.element:after {
-    content: "\2B73"; /* Unicode character for "plus" sign (+) */
-    font-size: 20px;
-    color: #121212;
-    margin-top: -2px;
-    float: right;
-    margin-right: 10px;
-    font-family: 'Oswald', sans-serif;
-}
-
 
 /*----------------------------------------------------------------------------- 
 6 -Gallery /Slideshow   
@@ -681,7 +664,7 @@ h3:hover a{ color:#121212;
   
     /* When you mouse over the navigation links, change their color */
     .sidenav a:hover {
-        color: #f1f1f1;
+        color: #fdfdfd;
     }
   
     /* Position and style the close button (top right corner) */
@@ -731,7 +714,7 @@ h3:hover a{ color:#121212;
     }
     .banner {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .center img, .banner img {
         margin-top: -50px;
@@ -739,12 +722,12 @@ h3:hover a{ color:#121212;
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
-        height: auto;
+        max-height: 667px;
         pointer-events: none;
     }
 
     h2 {    
-        font-size: 150%;/*3.1vmax;*/ 
+        font-size: 160%;/*3.1vmax;*/ 
         font-weight: 200;
         padding-bottom: 1%;
         margin-bottom: 0px;
@@ -802,7 +785,7 @@ h3:hover a{ color:#121212;
 
     .gallery-content {
 
-        height: 300px;
+        height: 320px;
         padding-top: 0px;
         padding-bottom: 2px;
 
@@ -811,7 +794,8 @@ h3:hover a{ color:#121212;
     .gallery-content img {
         width: 99%;
         position: relative;
-        height: 300px;
+        height: 320px;
+        padding-bottom: 2px;
     }
     
     .footer {
@@ -964,6 +948,7 @@ h3:hover a{ color:#121212;
         color: #121212;
         margin-bottom: 38px;
     }
+    
 
     .gallery-content {
         height: 640px;
