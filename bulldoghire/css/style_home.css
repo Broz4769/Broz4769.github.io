@@ -809,7 +809,7 @@ h3:hover a{ color:#121212;
     .footer {
         position: relative;
         width: 100%;
-        height: 130px;
+        height: 110px;
         background-color: #121212;
         padding: auto;
         font-size: 10px;
@@ -822,7 +822,7 @@ h3:hover a{ color:#121212;
         box-sizing: border-box;
         float: right; 
         width: 60%;
-        height: 130px;
+        height: 110px;
         text-align: left;
         padding-top: 10%;
          
