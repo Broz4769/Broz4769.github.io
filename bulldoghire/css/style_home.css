@@ -444,21 +444,20 @@ button {
 7 -Footer   
 -----------------------------------------------------------------------------*/
 
+
 .footer {
     position: relative;
     width: 100%;
     height: 300px;
-    background-color: #ff7e0c;
+    background-color: #121212;
     padding: auto;
     font-size: 14px;
     text-align: left;
-    border-top: 1px solid #ff7e0c;
-
-
+    border-top: 2px solid #ff7e0c;
 }
 
 .footer .links{
-    color: #121212;
+    color: #818181;
     text-align: left;
     margin: auto;
     font-style: bold;
@@ -474,9 +473,13 @@ button {
 }
 
 .list_float {
-    float: left;
-    
+    float: left;   
 }
+
+.list_float b{
+    color: #818181;   
+}
+
 
 /*----------------------------------------------------------------------------- 
 9 -Acknowledgment Icons Fonts Etc.    
@@ -485,11 +488,9 @@ button {
     text-align: left;
     padding-left: 20px;
     font-size: 12px;
+    color: #818181;
 }
 
-
-a.icons:hover { color: #fdfdfd; 
-                            text-decoration: none;}
 
 
 /*----------------------------------------------------------------------------- 
@@ -512,6 +513,9 @@ h3:hover a{ color:#121212;
 11 - Responsive Design   
 -----------------------------------------------------------------------------*/
 
+#demo {
+    color: #818181;
+}
 
 /*480p Green TEXT*/
 @media only screen and (min-height:480px) and (max-width: 360px) {
@@ -784,7 +788,6 @@ h3:hover a{ color:#121212;
     }
 
     .gallery-content {
-
         height: 320px;
         padding-top: 0px;
         padding-bottom: 2px;
@@ -796,6 +799,13 @@ h3:hover a{ color:#121212;
         position: relative;
         height: 320px;
         padding-bottom: 2px;
+    }
+
+    .footerlogoimg {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 100px;
     }
     
     .footer {
@@ -809,7 +819,7 @@ h3:hover a{ color:#121212;
 
 
 
-/*1080p BLACK TEXT*/
+/*1080p BLACK TEXT!!!!!!!!!!!!!!!!!*/
 @media (min-width:1025px) and (max-width:1920px) {
     #header {
        width: 1280px;
@@ -956,9 +966,124 @@ h3:hover a{ color:#121212;
     }
 
     .gallery-content img{
-    max-width: 90%;
-    margin: auto;
-    max-height: 600px;
-    } 
+        max-width: 90%;
+        margin: auto;
+        max-height: 600px;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        background-color: #121212;
+        padding: auto;
+        font-size: 14px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+    }
+
+    .footerbox {
+       box-sizing: border-box;
+       float: left; 
+       width: 360px;
+       height: 230px;
+       text-align: center;
+       padding-top: 75px;
+       padding-left: 50px;
+        
+    }
+
+    .footerbox b{
+        font-size: 24px;
+        color: #f1f1f1;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: underline #ff7e0c;
+    }
+
+    .footerlogoimg {
+        float: left;
+        position: relative;
+        width: 350px;
+        height: 180px;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+    
+    
+    .footer .links{
+        color: #818181;
+        text-align: left;
+        margin: auto;
+        padding: 1px;
+        font-style: bold;
+        font-size: 14px;
+    }
+    
+    .footer ul {
+        margin-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        list-style-type: none;
+        border-left: 1px solid #818181;
+    }
+    
+    .list_float {
+        float: left;   
+    }
+    
+    .list_float p{
+        margin-top: -20px;
+        color: #818181;   
+    }
+
+    .follow p {
+        margin-bottom: 5px;
+    }
+
+    .facebookfooterimg {
+        width: 30px;
+        height: 30px;   
+    }
+
+    .clearfloatfooter:after {
+        content: "";
+        display: table;
+        clear: left;
+    }
+    .clearfloatfooter {
+        height: 0px;
+        width: 100%;
+    }
+
+    .acknowledgement {
+        position: sticky;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        height: 30px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        padding-left: 5px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;}
+
+    a.copyright {
+        float: right;
+        padding-right: 50px;
+        color: #818181;
+    }
+
+
 
                         } /*End max-width: 1920px */
