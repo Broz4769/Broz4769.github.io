@@ -513,17 +513,10 @@ h3:hover a{ color:#121212;
 11 - Responsive Design   
 -----------------------------------------------------------------------------*/
 
-#demo {
-    color: #121212;
-}
 
-#demo:hover {
-    display: block;
-    color: #fdfdfd;
-}
 
 /*480p Green TEXT*/
-@media only screen and (min-height:480px) and (max-width: 360px) {
+@media only screen and (min-height:480px) and (max-width: 359px) {
 
     .menu__wrap_left {
         display: none;
@@ -591,22 +584,28 @@ h3:hover a{ color:#121212;
     }
     
     .footer {
-        display: none;
+        
     }
 
     .list_float {
-        display: none;
+        
     }
 
     .acknowledgement {
-        display: none;
+        
+    }
+
+    #demo {
+        display: block;
+        font-size: 50px;
+        color: #40c351;
     }
 
 
                         }/*End 480p */
 
 /*Min Viewport width of 360px up to 1024px - Mobile View BLUE TEXT*/
-@media only screen and (min-width:361px) and (max-width: 1024px) {
+@media only screen and (min-width:360px) and (max-width: 1024px) {
     
     
     #header {
@@ -1067,6 +1066,7 @@ h3:hover a{ color:#121212;
 
     .footerbox b{
         font-size: 24px;
+        font-weight: 300;
         color: #f1f1f1;
         font-family: 'Oswald', sans-serif;
         text-decoration: underline #ff7e0c;
@@ -1075,7 +1075,7 @@ h3:hover a{ color:#121212;
     .footerlogoimg {
         float: left;
         position: relative;
-        width: 360px;
+        width: 350px;
         height: 160px;
         margin-top: 30px;
         margin-left: -5px;
@@ -1158,6 +1158,10 @@ h3:hover a{ color:#121212;
         float: right;
         padding-right: 50px;
         color: #818181;
+    }
+
+    #demo {
+        display: none;
     }
 
 
