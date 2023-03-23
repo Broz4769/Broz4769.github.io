@@ -878,6 +878,9 @@ h3:hover a{ color:#121212;
         color: #818181;
     }
 
+    #demo {
+        display: none;
+    }
 
 
     }/*End max-width: 720p */
