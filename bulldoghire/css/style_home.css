@@ -514,7 +514,11 @@ h3:hover a{ color:#121212;
 -----------------------------------------------------------------------------*/
 
 #demo {
-    color: #818181;
+    color: #121212;
+}
+
+#demo:hover {
+    color: #fdfdfd;
 }
 
 /*480p Green TEXT*/
@@ -801,17 +805,81 @@ h3:hover a{ color:#121212;
         padding-bottom: 2px;
     }
 
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        background-color: #121212;
+        padding: auto;
+        font-size: 10px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+        border-bottom: 1px solid #818181;
+    }
+
+    .footerbox {
+        box-sizing: border-box;
+        float: right; 
+        width: 60%;
+        height: 130px;
+        text-align: left;
+        padding-top: 10%;
+         
+     }
+ 
+     .footerbox b{
+         font-size: 150%;
+         font-weight: 200;
+         color: #f1f1f1;
+         font-family: 'Oswald', sans-serif;
+         text-decoration: underline #ff7e0c;
+     }
+
     .footerlogoimg {
-    float: left;
-    position: relative;
-    width: 200px;
-    height: 100px;
+        
+        padding-top: 30px;
+        float: left;
+        position: relative;
+        width: 40%;
+        height: auto;
     }
     
-    .footer {
-        font-size: 12px;
+    .list_float {
+        display: none;
     }
-                        }/*End max-width: 720p */
+   
+    .acknowledgement {
+        position: sticky;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        height: 40px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        font-size: 9.5px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;}
+
+    a.copyright {
+        display: block;
+        font-size: 12px;
+        padding-top: 2px;
+        color: #818181;
+    }
+
+
+
+    }/*End max-width: 720p */
 
 
 
@@ -1003,8 +1071,8 @@ h3:hover a{ color:#121212;
     .footerlogoimg {
         float: left;
         position: relative;
-        width: 350px;
-        height: 180px;
+        width: 360px;
+        height: 160px;
         margin-top: 30px;
         margin-left: -5px;
     }
@@ -1036,6 +1104,10 @@ h3:hover a{ color:#121212;
     .list_float p{
         margin-top: -20px;
         color: #818181;   
+    }
+
+    li {
+        padding-bottom: 2px;
     }
 
     .follow p {
