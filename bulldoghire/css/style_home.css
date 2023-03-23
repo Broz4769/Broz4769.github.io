@@ -518,6 +518,7 @@ h3:hover a{ color:#121212;
 }
 
 #demo:hover {
+    display: block;
     color: #fdfdfd;
 }
 
