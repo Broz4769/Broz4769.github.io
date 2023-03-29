@@ -86,7 +86,6 @@ h2 {
     margin-top: 90px;
     margin-bottom: 0px;
     padding-top: 60px;
-    padding-right: ;
     margin-left: 100px;
     color:  #121212;
     font-size: 50px;
@@ -331,96 +330,81 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
-@media (max-width: 720px) {
+
+
+@media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
-       width: 700px;
+       width: 95%;
     }
 
-    #container body {
-        width: 700px;
+    #container {
+        width: 95%;
         position: center;
         margin:  0 auto 0 auto;
+        height: auto;
     }
-    h2 {    
-        font-size: 24px;
-        color: blue;
+    
+    .banner {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 5%;
+        height: 130px;
+        background-color: #fdfdfd;
+        
+    }
+
+    .banner img {
+        width: auto;
+        margin: 0px;
+        margin-top: 0;
+        margin-left: 20px;
+        height: 130px;
+        padding: 0px;
+        
+    }
+
+    h2 {
+        float: right;
+        box-sizing: border-box;
+        align-content: center;
+        width: 50%;
+        height: auto;
+        margin: 0;
+        margin-top: 40px;
+        font-size: 200%;
+        font-weight: 200;
+        color: #121212;
+        font-family: 'Oswald', sans-serif; 
+        
+    }
+
+    .clearfloat {
+        height: 0px;
     }
 
     h3  {
         font-size: 14px;
         color: Green;
+        display: none;
     }
 
-    .banner img {
-        height: 320px;
-        
-    }
-    .banner {
-        width: 700px;
-    }
-    .button {
-        width: 130px;
-        padding: 10px;
-        margin:  5px;
-    }
-     .button span {        
-        font-size: 13px;
-    }
-    .dropdown-content {
-        width: 134px;
-        font-size: 13px;
-    }
-    .gallery-content img {
-    max-width: 100%;
-    margin: auto;
-    max-height: 300px;
+    p.about_us {
+        border-top: 2px solid #ff7e0c;
+        margin: 5px;
     }
     
     .footer {
         font-size: 12px;
     }
+    
+
 
                         } /*End max-width: 720px */
 
-@media (min-width:980px) and (max-width: 1279px) {
-    
-    #header {
-       width: 960px;
-    }
 
-    #container body {
-        width: 960px;
-        position: center;
-        margin:  0 auto 0 auto;
-    }
-
-    h2 {    
-        font-size: 50px;
-        color: green;
-    }
-
-    h3  {
-        font-size: 40px;
-        color: green;
-        width: 960px;
-    }
-
-    .banner img {
-        height: 240px;
-        
-    }
-    .banner {
-        width: 960px;
-    }
-    
-    .footer {
-        font-size: 13px;
-    }
-
-                        } /*End max-width: 1000px */
-
-
-@media  (min-width:1280px) and (max-width:1920px) {
+@media  (min-width:1025px) and (max-width:1920px) {
     #header {
        width: 1280px; 
     }
