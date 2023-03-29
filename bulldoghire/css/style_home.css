@@ -491,6 +491,10 @@ button {
     color: #818181;
 }
 
+.Modalmenu {
+    display: none;
+}
+
 
 
 /*----------------------------------------------------------------------------- 
@@ -885,6 +889,56 @@ h3:hover a{ color:#121212;
     }
 
 
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .menuclose:hover,
+      .menuclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+
+
+
     }/*End max-width: 720p */
 
 
@@ -1142,6 +1196,7 @@ h3:hover a{ color:#121212;
         text-align: left;
         width: 100%;
         height: 30px;
+        padding-left: 20px;
         background-color: #121212;
         float: left;
 
@@ -1155,7 +1210,8 @@ h3:hover a{ color:#121212;
 
     a.icons:hover { 
         color: #fdfdfd; 
-        text-decoration: none;}
+        text-decoration: none;
+        cursor: pointer;}
 
     a.copyright {
         float: right;
@@ -1166,6 +1222,53 @@ h3:hover a{ color:#121212;
     #demo {
         display: none;
     }
+
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .menuclose:hover,
+      .menuclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
 
 
