@@ -337,11 +337,13 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
+        position: relative;
        margin-top: 5px;
+       margin-left: 10px;
        background-color: #121212;
        width: 95%;
        height: 52px;
-       margin-left: 5px;
+       
     }
 
     .headerlogo {
@@ -388,12 +390,12 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         box-sizing: border-box;
         width: 100%;
         margin: 0;
+        margin-left: 5px;
         padding: 0;
-        margin-top: 5%;
         height: 96px;
         background-color: #fdfdfd;
-        border-bottom: 2px solid #ff7e0c;
-        margin: 5px;
+        border-bottom: 3px solid #ff7e0c;
+        border-top: 3px solid #ff7e0c;
         
     }
 
@@ -416,9 +418,10 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         height: auto;
         margin: 0;
-        margin-top: 10px;
+        margin-left: 5px;
+        margin-top: 14px;
         font-size: 300%;
-        font-weight: 200;
+        font-weight: 500;
         color: #121212;
         font-family: 'Oswald', sans-serif; 
         
@@ -440,6 +443,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         height: 300px;
         border: 2px solid #121212;
         margin: 5px;
+        margin-left: 5px;
     }
 
     p.about_us {
