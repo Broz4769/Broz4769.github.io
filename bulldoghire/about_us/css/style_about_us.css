@@ -332,6 +332,9 @@ a:active { color:#121212;
 
 
 
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN MOBILE VIEW 
+-----------------------------------------------------------------------------*/
 @media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
        width: 95%;
@@ -350,12 +353,12 @@ a:active { color:#121212;
 
     }
 
-    .social_links_FB, .social_links_M {
-        height: 42px;
+    .social_links_FB img, .social_links_M img{
+        height: 38px;
     }
 
-    .social_links_W {
-        height: 39px;
+    .social_links_W img{
+        height: 38px;
     }
 
 
@@ -372,30 +375,34 @@ a:active { color:#121212;
         margin: 0;
         padding: 0;
         margin-top: 5%;
-        height: 130px;
+        height: 100px;
         background-color: #fdfdfd;
+        border-bottom: 2px solid #ff7e0c;
+        margin: 5px;
         
     }
 
     .banner img {
-        width: auto;
+        display: none;
+
+        /*width: auto;
         margin: 0px;
         margin-top: 0;
         margin-left: 20px;
         height: 130px;
-        padding: 0px;
+        padding: 0px;*/
         
     }
 
     h2 {
-        float: right;
+        float: none;
         box-sizing: border-box;
         align-content: center;
-        width: 50%;
+        width: 100%;
         height: auto;
         margin: 0;
-        margin-top: 40px;
-        font-size: 200%;
+        margin-top: 10px;
+        font-size: 300%;
         font-weight: 200;
         color: #121212;
         font-family: 'Oswald', sans-serif; 
@@ -412,17 +419,27 @@ a:active { color:#121212;
         display: none;
     }
 
-    p.about_us {
-        border-top: 2px solid #ff7e0c;
+    .contentbox {
+        box-sizing: border-box;
+        width: 100%;
+        height: 300px;
+        border: 2px solid #121212;
         margin: 5px;
+    }
+
+    p.about_us {
+        margin: 5px;
+        text-align: center;
     }
     
     .footer {
-        position: relative;
+        box-sizing: border-box;
         width: 100%;
         height: 140px;
         background-color: #121212;
-        padding: auto;
+        margin: 5px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         font-size: 10px;
         text-align: left;
         border-top: 2px solid #ff7e0c;
@@ -437,6 +454,10 @@ a:active { color:#121212;
         text-align: left;
         padding-top: 10%;
          
+     }
+
+     .clearfloat {
+        background-color: #121212;
      }
  
      .footerbox b, .footerbox p{
@@ -463,6 +484,8 @@ a:active { color:#121212;
    
     .acknowledgement {
         position: sticky;
+        margin: 5px;
+        margin-top: -5px;
         padding: 0;
         text-align: left;
         width: 100%;

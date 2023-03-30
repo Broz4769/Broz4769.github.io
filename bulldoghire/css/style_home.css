@@ -522,7 +522,6 @@ h3:hover a{ color:#121212;
 -----------------------------------------------------------------------------*/
 
 
-
 /*480p Green TEXT*/
 @media only screen and (min-height:480px) and (max-width: 240px) {
 
@@ -611,6 +610,10 @@ h3:hover a{ color:#121212;
 
 
                         }/*End 480p */
+
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN MOBILE VIEW 
+-----------------------------------------------------------------------------*/
 
 /*Min Viewport width of 241px up to 1024px - Mobile View BLUE TEXT*/
 @media only screen and (min-width:241px) and (max-width: 1024px) {
@@ -943,7 +946,9 @@ h3:hover a{ color:#121212;
 
 
 
-
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN DESKTOP VIEW 
+-----------------------------------------------------------------------------*/
 
 /*1080p BLACK TEXT!!!!!!!!!!!!!!!!!*/
 @media (min-width:1025px) and (max-width:1920px) {
