@@ -337,9 +337,19 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
+       margin-top: 5px;
+       background-color: #121212;
        width: 95%;
        height: 52px;
-       margin-left: 10px;
+       margin-left: 5px;
+    }
+
+    .headerlogo {
+        float: left;
+        margin-top: 7px;
+        margin-left: 35px;
+        height: 36px;
+        width: auto;
     }
 
     .img__wrap_left img{
@@ -354,12 +364,15 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     }
 
-    .social_links_FB img, .social_links_M img{
+    .social_links_FB img, .social_links_M img, .social_links_W{
         height: 38px;
     }
 
-    .social_links_W img{
-        height: 38px;
+    a.social_links_FB, a.social_links_M {
+        margin-top: 15px;
+    }
+    a.social_links_W {
+        margin-top: 17px;
     }
 
 
@@ -367,7 +380,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 95%;
         position: center;
         margin:  0 auto 0 auto;
-        margin-left: 10px;
+        margin-left: 5px;
         height: auto;
     }
     
@@ -377,7 +390,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         margin: 0;
         padding: 0;
         margin-top: 5%;
-        height: 100px;
+        height: 96px;
         background-color: #fdfdfd;
         border-bottom: 2px solid #ff7e0c;
         margin: 5px;
@@ -437,7 +450,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .footer {
         box-sizing: border-box;
         width: 100%;
-        height: 140px;
+        height: 120px;
         background-color: #121212;
         margin: 5px;
         margin-bottom: 0px;
@@ -452,7 +465,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         box-sizing: border-box;
         float: right; 
         width: 60%;
-        height: 140px;
+        height: 120px;
         text-align: left;
         padding-top: 10%;
          
@@ -477,7 +490,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         float: left;
         position: relative;
         width: 40%;
-        max-height: 140px;
+        max-height: 120px;
     }
     
     .list_float {
@@ -568,6 +581,10 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     #header {
        width: 1280px;
        height: 64px; 
+    }
+
+    .headerlogo {
+        display: none;
     }
 
     .img__wrap_left {
