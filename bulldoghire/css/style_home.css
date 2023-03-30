@@ -480,6 +480,10 @@ button {
     color: #818181;   
 }
 
+.footerbox {
+    text-decoration: none;
+}
+
 
 /*----------------------------------------------------------------------------- 
 9 -Acknowledgment Icons Fonts Etc.    
@@ -753,7 +757,7 @@ h3:hover a{ color:#121212;
     }
 
     h3  {
-        
+        width: 100%;
         font-size: 150%;/*30px;*/
         font-weight: 200;
         color: #121212;
@@ -833,9 +837,9 @@ h3:hover a{ color:#121212;
          
      }
  
-     .footerbox b{
+     .footerbox b, .footerbox p{
          font-variant: normal;
-         font-size: 150%;
+         font-size: 125%;
          font-weight: 200;
          color: #f1f1f1;
          font-family: 'Oswald', sans-serif;
@@ -928,13 +932,7 @@ h3:hover a{ color:#121212;
         font-size: 28px;
         font-weight: bold;
       }
-      
-      .menuclose:hover,
-      .menuclose:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
+
 
 
 
