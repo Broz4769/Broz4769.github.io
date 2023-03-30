@@ -86,7 +86,6 @@ h2 {
     margin-top: 90px;
     margin-bottom: 0px;
     padding-top: 60px;
-    padding-right: ;
     margin-left: 100px;
     color:  #121212;
     font-size: 50px;
@@ -142,7 +141,7 @@ h3 {
 }
 
 .img__wrap_right a:hover {
-    opacity: 0.7; 
+    opacity: 0.8; 
     text-decoration: none;
 }
 
@@ -331,101 +330,294 @@ a:active { color:#121212;
            text-decoration: none;}
 /* #fdfdfd - The Cream/White Colour  rgba(253, 253, 253, 1)*/
 
-@media (max-width: 720px) {
+
+
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN MOBILE VIEW 
+-----------------------------------------------------------------------------*/
+@media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
-       width: 700px;
+        position: relative;
+       margin-top: 5px;
+       margin-left: 10px;
+       background-color: #121212;
+       width: 95%;
+       height: 52px;
+       
     }
 
-    #container body {
-        width: 700px;
+    .headerlogo {
+        float: left;
+        margin-top: 7px;
+        margin-left: 35px;
+        height: 36px;
+        width: auto;
+    }
+
+    .img__wrap_left img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .img__description {
+        font-size: 11px;
+        margin-top: 16px;
+        margin-left: 10px;
+
+    }
+
+    .social_links_FB img, .social_links_M img, .social_links_W{
+        height: 38px;
+    }
+
+    a.social_links_FB, a.social_links_M {
+        margin-top: 15px;
+    }
+    a.social_links_W {
+        margin-top: 17px;
+    }
+
+
+    #container {
+        width: 95%;
         position: center;
         margin:  0 auto 0 auto;
+        margin-left: 5px;
+        height: auto;
     }
-    h2 {    
-        font-size: 24px;
-        color: blue;
+    
+    .banner {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        margin-left: 5px;
+        padding: 0;
+        height: 96px;
+        background-color: #fdfdfd;
+        border-bottom: 3px solid #ff7e0c;
+        border-top: 3px solid #ff7e0c;
+        
+    }
+
+    .banner img {
+        display: none;
+
+        /*width: auto;
+        margin: 0px;
+        margin-top: 0;
+        margin-left: 20px;
+        height: 130px;
+        padding: 0px;*/
+        
+    }
+
+    h2 {
+        float: none;
+        box-sizing: border-box;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-left: 5px;
+        margin-top: 14px;
+        font-size: 300%;
+        font-weight: 500;
+        color: #121212;
+        font-family: 'Oswald', sans-serif; 
+        
+    }
+
+    .clearfloat {
+        height: 0px;
     }
 
     h3  {
         font-size: 14px;
         color: Green;
+        display: none;
     }
 
-    .banner img {
-        height: 320px;
-        
+    .contentbox {
+        box-sizing: border-box;
+        width: 100%;
+        height: 300px;
+        border: 2px solid #121212;
+        margin: 5px;
+        margin-left: 5px;
     }
-    .banner {
-        width: 700px;
-    }
-    .button {
-        width: 130px;
-        padding: 10px;
-        margin:  5px;
-    }
-     .button span {        
-        font-size: 13px;
-    }
-    .dropdown-content {
-        width: 134px;
-        font-size: 13px;
-    }
-    .gallery-content img {
-    max-width: 100%;
-    margin: auto;
-    max-height: 300px;
+
+    p.about_us {
+        margin: 5px;
+        text-align: center;
     }
     
     .footer {
-        font-size: 12px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 120px;
+        background-color: #121212;
+        margin: 5px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 10px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+        border-bottom: 1px solid #818181;
     }
+
+    .footerbox {
+        box-sizing: border-box;
+        float: right; 
+        width: 60%;
+        height: 120px;
+        text-align: left;
+        padding-top: 10%;
+         
+     }
+
+     .clearfloat {
+        background-color: #121212;
+     }
+ 
+     .footerbox b, .footerbox p{
+         font-variant: normal;
+         font-size: 125%;
+         font-weight: 200;
+         color: #f1f1f1;
+         font-family: 'Oswald', sans-serif;
+         text-decoration: underline 1.5px #ff7e0c;
+     }
+
+    .footerlogoimg {
+        box-sizing: border-box;
+        padding-top: 30px;
+        float: left;
+        position: relative;
+        width: 40%;
+        max-height: 120px;
+    }
+    
+    .list_float {
+        display: none;
+    }
+   
+    .acknowledgement {
+        position: sticky;
+        margin: 5px;
+        margin-top: -5px;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        max-height: 50px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        font-size: 9px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;}
+
+    a.copyright {
+        display: block;
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: #818181;
+    }
+
+
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+    
+
 
                         } /*End max-width: 720px */
 
-@media (min-width:980px) and (max-width: 1279px) {
-    
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN DESKTOP VIEW 
+-----------------------------------------------------------------------------*/
+
+@media  (min-width:1025px) and (max-width:1920px) {
     #header {
-       width: 960px;
+       width: 1280px;
+       height: 64px; 
     }
 
-    #container body {
-        width: 960px;
-        position: center;
-        margin:  0 auto 0 auto;
+    .headerlogo {
+        display: none;
     }
 
-    h2 {    
-        font-size: 50px;
-        color: green;
+    .img__wrap_left {
+        width: 64px;
+        height: 64px;
     }
 
-    h3  {
-        font-size: 40px;
-        color: green;
-        width: 960px;
+    .img__wrap_left img{
+        width: 70px;
+        height: 70px;
     }
 
-    .banner img {
-        height: 240px;
+    .img__description {
+        font-size: 12px;
+        margin-top: 21px;
+        margin-left: 17px;
+
+    }
+
+    .social_links_FB img, .social_links_M img, .social_links_W img{
+        height: 40px;
         
     }
-    .banner {
-        width: 960px;
-    }
-    
-    .footer {
-        font-size: 13px;
+
+    a.social_links_FB, a.social_links_M, a.social_links_W {
+        margin-top: 22px;
     }
 
-                        } /*End max-width: 1000px */
-
-
-@media  (min-width:1280px) and (max-width:1920px) {
-    #header {
-       width: 1280px; 
-    }
-
-    #container body {
+    #container {
         width: 1280px;
         position: center;
         margin:  0 auto 0 auto;
@@ -435,23 +627,214 @@ a:active { color:#121212;
         
     }
     .banner {
+        position: center;
+        width: 1280px;
+        height: 272px;
+        background-color: #fdfdfd;
+        border-bottom: 2px solid #ff7e0c;
+    }
+
+    .clearfloat {
+        position: relative;
         width: 1280px;
     }
 
     h2 {
 
-    margin-top: 90px;
-    margin-left: 120px;
-    font-size: 68px;
-    width: 480px;
+        margin-top: 90px;
+        margin-left: 180px;
+        font-size: 68px;
 
     }
 
-    h3  {
-        font-size: 40px;
-        color: green;
-        width: 1080px;
+    .contentbox {
+        position: relative;
+        box-sizing: border-box;
+        width: 1280px;
+        height: 300px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid #121212;
     }
+
+    p.about_us {
+        margin: 5px;
+        text-align: center;
+    }
+
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        background-color: #121212;
+        padding: auto;
+        font-size: 14px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+    }
+
+    .footerbox {
+       box-sizing: border-box;
+       float: left; 
+       width: 360px;
+       height: 230px;
+       text-align: center;
+       padding-top: 75px;
+       padding-left: 50px;
+        
+    }
+
+    .footerbox b{
+        font-size: 24px;
+        font-weight: 300;
+        color: #f1f1f1;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: underline #ff7e0c;
+    }
+
+    .footerlogoimg {
+        float: left;
+        position: relative;
+        width: 350px;
+        height: 160px;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+    
+    
+    .footer .links{
+        color: #818181;
+        text-align: left;
+        margin: auto;
+        padding: 1px;
+        font-style: bold;
+        font-size: 14px;
+    }
+    
+    .footer ul {
+        margin-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        list-style-type: none;
+        border-left: 1px solid #818181;
+    }
+    
+    .list_float {
+        float: left;   
+    }
+    
+    .list_float p{
+        margin-top: -20px;
+        color: #818181;   
+    }
+
+    li {
+        padding-bottom: 2px;
+    }
+
+    .follow p {
+        margin-bottom: 5px;
+    }
+
+    .facebookfooterimg {
+        width: 30px;
+        height: 30px;   
+    }
+
+    .clearfloatfooter:after {
+        content: "";
+        display: table;
+        clear: left;
+    }
+    .clearfloatfooter {
+        height: 0px;
+        width: 100%;
+    }
+
+    .acknowledgement {
+        position: sticky;
+        box-sizing: border-box;
+        width: 1280px;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        height: 30px;
+        padding-left: 20px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        padding-left: 5px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;
+        cursor: pointer;}
+
+    a.copyright {
+        float: right;
+        padding-right: 50px;
+        color: #818181;
+    }
+
+    #demo {
+        display: none;
+    }
+
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .menuclose:hover,
+      .menuclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
     
 
                         } /*End max-width: 1360px */
