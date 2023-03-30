@@ -339,6 +339,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     #header {
        width: 95%;
        height: 52px;
+       margin-left: 10px;
     }
 
     .img__wrap_left img{
@@ -366,6 +367,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 95%;
         position: center;
         margin:  0 auto 0 auto;
+        margin-left: 10px;
         height: auto;
     }
     
@@ -558,13 +560,43 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
                         } /*End max-width: 720px */
 
+/*----------------------------------------------------------------------------- 
+XX - RESPONSIVE DESIGN DESKTOP VIEW 
+-----------------------------------------------------------------------------*/
 
 @media  (min-width:1025px) and (max-width:1920px) {
     #header {
-       width: 1280px; 
+       width: 1280px;
+       height: 64px; 
     }
 
-    #container body {
+    .img__wrap_left {
+        width: 64px;
+        height: 64px;
+    }
+
+    .img__wrap_left img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .img__description {
+        font-size: 12px;
+        margin-top: 21px;
+        margin-left: 17px;
+
+    }
+
+    .social_links_FB img, .social_links_M img, .social_links_W img{
+        height: 40px;
+        
+    }
+
+    a.social_links_FB, a.social_links_M, a.social_links_W {
+        margin-top: 22px;
+    }
+
+    #container {
         width: 1280px;
         position: center;
         margin:  0 auto 0 auto;
@@ -574,22 +606,41 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         
     }
     .banner {
+        position: center;
+        width: 1280px;
+        height: 272px;
+        background-color: #fdfdfd;
+        border-bottom: 2px solid #ff7e0c;
+    }
+
+    .clearfloat {
+        position: relative;
         width: 1280px;
     }
 
     h2 {
 
-    margin-top: 90px;
-    margin-left: 180px;
-    font-size: 68px;
+        margin-top: 90px;
+        margin-left: 180px;
+        font-size: 68px;
 
     }
 
-    h3  {
-        font-size: 40px;
-        color: green;
-        width: 1080px;
+    .contentbox {
+        position: relative;
+        box-sizing: border-box;
+        width: 1280px;
+        height: 300px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid #121212;
     }
+
+    p.about_us {
+        margin: 5px;
+        text-align: center;
+    }
+
 
     .footer {
         position: relative;
@@ -684,6 +735,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     .acknowledgement {
         position: sticky;
+        box-sizing: border-box;
+        width: 1280px;
         padding: 0;
         text-align: left;
         width: 100%;
