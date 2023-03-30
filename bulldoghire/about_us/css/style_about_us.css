@@ -335,7 +335,29 @@ a:active { color:#121212;
 @media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
        width: 95%;
+       height: 52px;
     }
+
+    .img__wrap_left img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .img__description {
+        font-size: 11px;
+        margin-top: 16px;
+        margin-left: 10px;
+
+    }
+
+    .social_links_FB, .social_links_M {
+        height: 42px;
+    }
+
+    .social_links_W {
+        height: 39px;
+    }
+
 
     #container {
         width: 95%;
@@ -396,8 +418,118 @@ a:active { color:#121212;
     }
     
     .footer {
-        font-size: 12px;
+        position: relative;
+        width: 100%;
+        height: 140px;
+        background-color: #121212;
+        padding: auto;
+        font-size: 10px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+        border-bottom: 1px solid #818181;
     }
+
+    .footerbox {
+        box-sizing: border-box;
+        float: right; 
+        width: 60%;
+        height: 140px;
+        text-align: left;
+        padding-top: 10%;
+         
+     }
+ 
+     .footerbox b, .footerbox p{
+         font-variant: normal;
+         font-size: 125%;
+         font-weight: 200;
+         color: #f1f1f1;
+         font-family: 'Oswald', sans-serif;
+         text-decoration: underline 1.5px #ff7e0c;
+     }
+
+    .footerlogoimg {
+        box-sizing: border-box;
+        padding-top: 30px;
+        float: left;
+        position: relative;
+        width: 40%;
+        max-height: 140px;
+    }
+    
+    .list_float {
+        display: none;
+    }
+   
+    .acknowledgement {
+        position: sticky;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        max-height: 50px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        font-size: 9px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;}
+
+    a.copyright {
+        display: block;
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: #818181;
+    }
+
+
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
     
 
 
@@ -435,6 +567,177 @@ a:active { color:#121212;
         color: green;
         width: 1080px;
     }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        background-color: #121212;
+        padding: auto;
+        font-size: 14px;
+        text-align: left;
+        border-top: 2px solid #ff7e0c;
+    }
+
+    .footerbox {
+       box-sizing: border-box;
+       float: left; 
+       width: 360px;
+       height: 230px;
+       text-align: center;
+       padding-top: 75px;
+       padding-left: 50px;
+        
+    }
+
+    .footerbox b{
+        font-size: 24px;
+        font-weight: 300;
+        color: #f1f1f1;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: underline #ff7e0c;
+    }
+
+    .footerlogoimg {
+        float: left;
+        position: relative;
+        width: 350px;
+        height: 160px;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+    
+    
+    .footer .links{
+        color: #818181;
+        text-align: left;
+        margin: auto;
+        padding: 1px;
+        font-style: bold;
+        font-size: 14px;
+    }
+    
+    .footer ul {
+        margin-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        list-style-type: none;
+        border-left: 1px solid #818181;
+    }
+    
+    .list_float {
+        float: left;   
+    }
+    
+    .list_float p{
+        margin-top: -20px;
+        color: #818181;   
+    }
+
+    li {
+        padding-bottom: 2px;
+    }
+
+    .follow p {
+        margin-bottom: 5px;
+    }
+
+    .facebookfooterimg {
+        width: 30px;
+        height: 30px;   
+    }
+
+    .clearfloatfooter:after {
+        content: "";
+        display: table;
+        clear: left;
+    }
+    .clearfloatfooter {
+        height: 0px;
+        width: 100%;
+    }
+
+    .acknowledgement {
+        position: sticky;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        height: 30px;
+        padding-left: 20px;
+        background-color: #121212;
+        float: left;
+
+    }
+
+    a.icons {
+        padding-left: 5px;
+        color: #818181;
+
+    }
+
+    a.icons:hover { 
+        color: #fdfdfd; 
+        text-decoration: none;
+        cursor: pointer;}
+
+    a.copyright {
+        float: right;
+        padding-right: 50px;
+        color: #818181;
+    }
+
+    #demo {
+        display: none;
+    }
+
+    .Modalmenu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .Modalmenucontent {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      a.Modalmenulinks {
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+      }
+
+      a.Modalmenulinks:hover {
+        color: #ff7e0c;
+      }
+      
+      /* The Close Button */
+      .menuclose {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .menuclose:hover,
+      .menuclose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
     
 
                         } /*End max-width: 1360px */
