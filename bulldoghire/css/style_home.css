@@ -1195,6 +1195,7 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     }
 
     .acknowledgement {
+        box-sizing: border-box;
         position: sticky;
         padding: 0;
         text-align: left;

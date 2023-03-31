@@ -484,7 +484,9 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
          font-weight: 200;
          color: #f1f1f1;
          font-family: 'Oswald', sans-serif;
-         text-decoration: underline 1.5px #ff7e0c;
+         text-decoration: underline #ff7e0c;
+         text-decoration-thickness: 0.04em;
+         text-underline-offset: 0.03em;
      }
 
     .footerlogoimg {
@@ -689,7 +691,11 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         font-weight: 300;
         color: #f1f1f1;
         font-family: 'Oswald', sans-serif;
-        text-decoration: underline #ff7e0c;
+        
+    }
+
+    .footerbox p  {
+        text-decoration: 2px underline #ff7e0c;
     }
 
     .footerlogoimg {
