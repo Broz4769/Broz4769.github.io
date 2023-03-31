@@ -337,7 +337,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width:241px) and (max-width: 1024px) {
     #header {
-        position: relative;
+       position: relative;
        margin-top: 5px;
        margin-left: 10px;
        background-color: #121212;
@@ -394,8 +394,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         padding: 0;
         height: 96px;
         background-color: #fdfdfd;
-        border-bottom: 3px solid #ff7e0c;
-        border-top: 3px solid #ff7e0c;
+        border-bottom: 2px solid #ff7e0c;
         
     }
 

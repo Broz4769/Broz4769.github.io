@@ -347,9 +347,9 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     }
 
     .headerlogo {
-        float: left;
+        float: right;
         margin-top: 7px;
-        margin-left: 35px;
+        margin-right: 35px;
         height: 36px;
         width: auto;
     }
@@ -368,6 +368,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     .social_links_FB img, .social_links_M img, .social_links_W{
         height: 38px;
+        display: none;
     }
 
     a.social_links_FB, a.social_links_M {
@@ -387,12 +388,13 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     }
     
     .banner {
+        display: none;
         box-sizing: border-box;
         width: 100%;
         margin: 0;
         margin-left: 5px;
         padding: 0;
-        height: 96px;
+        height: 84px;
         background-color: #fdfdfd;
         border-bottom: 3px solid #ff7e0c;
         border-top: 3px solid #ff7e0c;
@@ -412,6 +414,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     }
 
     h2 {
+        display: none;
         float: none;
         box-sizing: border-box;
         align-content: center;
@@ -420,8 +423,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         margin: 0;
         margin-left: 5px;
         margin-top: 14px;
-        font-size: 300%;
-        font-weight: 500;
+        font-size: 200%;
+        font-weight: 300;
         color: #121212;
         font-family: 'Oswald', sans-serif; 
         
@@ -431,25 +434,93 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         height: 0px;
     }
 
-    h3  {
-        font-size: 14px;
-        color: Green;
-        display: none;
-    }
 
     .contentbox {
         box-sizing: border-box;
         width: 100%;
         height: 300px;
-        border: 2px solid #121212;
         margin: 5px;
         margin-left: 5px;
     }
 
-    p.about_us {
+    .contact_details {
+        text-align: left;
+        float: none;
+        box-sizing: border-box;
+        width: 100%;
         margin: 5px;
-        text-align: center;
+        height: 260px; 
+        color: #121212;
+        border-bottom: 2px solid #ff7e0c;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
     }
+    .contact_details b{
+        font-size: 300%;
+        text-decoration: 2px underline #ff7e0c;
+        margin: 0;
+    }
+
+    .contact_details p {
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    p.location, p.contact, p.mail, p.facebook{
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 5%;
+    }
+    .location img, .contact img {
+        padding-top: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mail img, .facebook img {
+        padding-top: 20px;
+        width: 24x;
+        height: 24px;
+    }
+
+    .trading_hours {
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 5px;
+        height: 200px;
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        border-bottom: 2px solid #ff7e0c;
+        font-weight: 200;
+    }
+
+    .trading_hours b{
+        font-size: 200%;
+        text-decoration: 2px underline #ff7e0c;
+        margin: 0;
+    }
+
+    .trading_hours p {
+        margin-bottom: 0px;
+    }
+
+    .clock img {
+        width: 30px;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+        border: 0;
+        margin: 5px;
+    }
+
+
+    
     
     .footer {
         box-sizing: border-box;
@@ -610,6 +681,7 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
 
     .social_links_FB img, .social_links_M img, .social_links_W img{
         height: 40px;
+        display: none;
         
     }
 
@@ -640,10 +712,10 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     }
 
     h2 {
-
-        margin-top: 90px;
-        margin-left: 180px;
+        margin-top: 80px;
+        margin-left: 100px;
         font-size: 68px;
+        width: auto;
 
     }
 
@@ -654,12 +726,79 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         height: 300px;
         margin-top: 5px;
         margin-bottom: 5px;
-        border: 2px solid #121212;
+        
     }
 
-    p.about_us {
-        margin: 5px;
-        text-align: center;
+    .contact_details {
+        text-align: left;
+        float: left;
+        box-sizing: border-box;
+        width: 50%;
+        height: 300px; 
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+    }
+    .contact_details b{
+        padding-left: 25%;
+        font-size: 40px;
+        text-decoration: 2px underline #ff7e0c;
+        margin: 0;
+    }
+
+    .contact_details p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    p.location, p.contact, p.mail, p.facebook{
+        margin: 0px;
+        padding: 0px;
+        padding-left: 10%;
+    }
+    .location img, .contact img {
+        padding-top: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mail img, .facebook img {
+        padding-top: 20px;
+        width: 24x;
+        height: 24px;
+    }
+
+    .trading_hours {
+        float: left;
+        box-sizing: border-box;
+        width: 50%;
+        height: 300px;
+        color: #121212;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        border-left: 2px solid #121212;
+        padding-right: 50px;
+    }
+
+    .trading_hours b{
+        padding-left: 35px;
+        font-size: 40px;
+        text-decoration: 2px underline #ff7e0c;
+        margin: 0;
+    }
+
+    .trading_hours p {
+        margin-bottom: 0px;
+    }
+
+    .clock img {
+        width: 30px;
+        height: auto;
+    }
+
+    iframe {
+        width: 1280px;
+        height: 300px;
+        border: 0;
     }
 
 
