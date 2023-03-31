@@ -438,51 +438,55 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .contentbox {
         box-sizing: border-box;
         width: 100%;
-        height: 300px;
+        height: 450px;
         margin: 5px;
         margin-left: 5px;
     }
 
     .contact_details {
-        text-align: left;
+        text-align: center;
         float: none;
         box-sizing: border-box;
         width: 100%;
         margin: 5px;
-        height: 260px; 
+        margin-left: 0px;
+        height: 240px; 
         color: #121212;
         border-bottom: 2px solid #ff7e0c;
         font-family: 'Oswald', sans-serif;
         font-weight: 200;
     }
     .contact_details b{
-        font-size: 300%;
+        text-align: center;
+        font-size: 260%;
         text-decoration: 2px underline #ff7e0c;
         margin: 0;
     }
 
-    .contact_details p {
-        text-align: center;
-        margin-bottom: 0px;
-        font-size: 12px;
+    .contact_details ul {
+        padding-top: 10px;
+        padding-left: 20px;
     }
-    p.location, p.contact, p.mail, p.facebook{
-        text-align: left;
-        margin: 0px;
-        padding: 0px;
-        padding-left: 5%;
+
+    li.location, li.contact, li.mail, li.facebook {
+        display: inline;
+        list-style-type: none;
     }
-    .location img, .contact img {
-        padding-top: 20px;
+
+    li.location img, li.contact img, li.mail img, li.facebook img {
+        float: left;
+        padding: 0;
         width: 20px;
         height: 20px;
     }
 
-    .mail img, .facebook img {
-        padding-top: 20px;
-        width: 24x;
-        height: 24px;
+    li.location p, li.contact p, li.mail p, li.facebook p {
+        text-align: left;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
     }
+
 
     .trading_hours {
         float: left;
@@ -490,6 +494,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         box-sizing: border-box;
         width: 100%;
         margin: 5px;
+        margin-top: 0;
+        padding-bottom: 20px;
         height: 200px;
         color: #121212;
         font-family: 'Oswald', sans-serif;
@@ -746,25 +752,28 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         margin: 0;
     }
 
-    .contact_details p {
-        margin-bottom: 0px;
-        font-size: 16px;
+    .contact_details ul {
+        padding-top: 10px;
+        padding-left: 20px;
     }
-    p.location, p.contact, p.mail, p.facebook{
-        margin: 0px;
-        padding: 0px;
-        padding-left: 10%;
+
+    li.location, li.contact, li.mail, li.facebook {
+        display: inline;
+        list-style-type: none;
     }
-    .location img, .contact img {
-        padding-top: 20px;
+
+    li.location img, li.contact img, li.mail img, li.facebook img {
+        float: left;
+        padding: 0;
         width: 20px;
         height: 20px;
     }
 
-    .mail img, .facebook img {
-        padding-top: 20px;
-        width: 24x;
-        height: 24px;
+    li.location p, li.contact p, li.mail p, li.facebook p {
+        text-align: left;
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .trading_hours {
@@ -788,6 +797,7 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
 
     .trading_hours p {
         margin-bottom: 0px;
+        font-size: 20px;
     }
 
     .clock img {
