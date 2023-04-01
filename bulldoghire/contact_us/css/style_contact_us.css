@@ -489,7 +489,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     li.location p, li.contact p, li.contactW p, li.mail p, li.facebook p {
         text-align: left;
-        font-size: 16px;
+        font-size: 100%;
         margin: 0px;
         padding: 0px;
     }
