@@ -438,7 +438,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .contentbox {
         box-sizing: border-box;
         width: 100%;
-        height: 470px;
+        height: 500px;
         margin: 5px;
         margin-left: 5px;
     }
@@ -450,7 +450,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         margin: 5px;
         margin-left: 0px;
-        height: 260px; 
+        height: 290px; 
         color: #121212;
         border-bottom: 2px solid #ff7e0c;
         font-family: 'Oswald', sans-serif;
@@ -789,6 +789,7 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         margin: 0px;
         padding: 0px;
     }
+
 
     .trading_hours {
         float: left;
