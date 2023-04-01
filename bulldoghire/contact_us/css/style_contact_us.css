@@ -438,7 +438,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .contentbox {
         box-sizing: border-box;
         width: 100%;
-        height: 450px;
+        height: 470px;
         margin: 5px;
         margin-left: 5px;
     }
@@ -450,7 +450,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         margin: 5px;
         margin-left: 0px;
-        height: 240px; 
+        height: 260px; 
         color: #121212;
         border-bottom: 2px solid #ff7e0c;
         font-family: 'Oswald', sans-serif;
@@ -468,19 +468,26 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         padding-left: 20px;
     }
 
-    li.location, li.contact, li.mail, li.facebook {
+    li.location, li.contact, li.contactW, li.mail, li.facebook {
         display: inline;
         list-style-type: none;
     }
 
-    li.location img, li.contact img, li.mail img, li.facebook img {
+    li.location img, li.contact img, li.contactW img {
         float: left;
         padding: 0;
         width: 20px;
         height: 20px;
     }
 
-    li.location p, li.contact p, li.mail p, li.facebook p {
+    li.mail img, li.facebook img{
+        float: left;
+        padding: 0;
+        width: 22px;
+        height: 22px;
+    }
+
+    li.location p, li.contact p, li.contactW p, li.mail p, li.facebook p {
         text-align: left;
         font-size: 16px;
         margin: 0px;
@@ -757,19 +764,26 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         padding-left: 20px;
     }
 
-    li.location, li.contact, li.mail, li.facebook {
+    li.location, li.contact, li.contactW, li.mail, li.facebook {
         display: inline;
         list-style-type: none;
     }
 
-    li.location img, li.contact img, li.mail img, li.facebook img {
+    li.location img, li.contact img, li.contactW img {
         float: left;
         padding: 0;
         width: 20px;
         height: 20px;
     }
 
-    li.location p, li.contact p, li.mail p, li.facebook p {
+    li.mail img, li.facebook img{
+        float: left;
+        padding: 0;
+        width: 22px;
+        height: 22px;
+    }
+
+    li.location p, li.contact p, li.contactW p, li.mail p, li.facebook p {
         text-align: left;
         font-size: 20px;
         margin: 0px;
