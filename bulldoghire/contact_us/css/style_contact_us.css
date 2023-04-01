@@ -438,9 +438,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .contentbox {
         box-sizing: border-box;
         width: 100%;
-        height: 500px;
+        height: auto;
         margin: 5px;
-        margin-left: 5px;
     }
 
     .contact_details {
@@ -450,7 +449,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         margin: 5px;
         margin-left: 0px;
-        height: 290px; 
+        height: auto; 
         color: #121212;
         border-bottom: 2px solid #ff7e0c;
         font-family: 'Oswald', sans-serif;
@@ -489,7 +488,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     li.location p, li.contact p, li.contactW p, li.mail p, li.facebook p {
         text-align: left;
-        font-size: 100%;
+        font-size: 115%;
         margin: 0px;
         padding: 0px;
     }
@@ -503,7 +502,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         margin: 5px;
         margin-top: 0;
         padding-bottom: 20px;
-        height: 200px;
+        height: auto;
         color: #121212;
         font-family: 'Oswald', sans-serif;
         border-bottom: 2px solid #ff7e0c;
