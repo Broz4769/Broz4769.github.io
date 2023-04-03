@@ -583,13 +583,37 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .list_float {
         display: none;
     }
+
+    ul.list_block_enable {
+        display: block;
+        padding-top: 0;
+        height: auto;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #121212;
+        font-size: 12px;
+    }
+
+    .footer .links{
+        font-size:10px;
+    }
+
+    ul.follow {
+        padding-top: 10px;
+    }
+
+    .facebookfooterimg {
+        width: 20px;
+        height: auto;
+        
+    }
    
     .acknowledgement {
         position: sticky;
         margin: 5px;
         margin-top: -5px;
         padding: 0;
-        text-align: left;
+        text-align: center;
         width: 100%;
         max-height: 50px;
         background-color: #121212;

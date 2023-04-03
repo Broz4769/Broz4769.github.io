@@ -862,11 +862,35 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .list_float {
         display: none;
     }
+
+    ul.list_block_enable {
+        padding-top: 0;
+        height: auto;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        background-color: #121212;
+        font-size: 12px;
+    }
+
+    .footer .links{
+        font-size:10px;
+    }
+
+    ul.follow {
+        padding-top: 10px;
+    }
+
+    .facebookfooterimg {
+        width: 20px;
+        height: auto;
+        
+    }
    
     .acknowledgement {
         position: sticky;
         padding: 0;
-        text-align: left;
+        text-align: center;
         width: 100%;
         max-height: 50px;
         background-color: #121212;
@@ -887,8 +911,9 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     a.copyright {
         display: block;
         font-size: 12px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: auto;
         color: #818181;
     }
 
