@@ -526,41 +526,43 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
 
     iframe {
         width: 100%;
-        height: 200px;
+        height: 240px;
         border: 0;
         margin: 5px;
     }
-
-
     
+    
+    .list_float {
+        
+        display: none;
+    }
     
     .footer {
-        box-sizing: border-box;
-        width: 100%;
-        height: 120px;
-        background-color: #121212;
+        position: relative;
         margin: 5px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        font-size: 10px;
+        margin-bottom: 0;
+        width: 100%;
+        height: 460px;
+        background-color: #121212;
+        font-size: 12px;
         text-align: left;
         border-top: 2px solid #ff7e0c;
-        border-bottom: 1px solid #818181;
     }
 
     .footerbox {
+        position: relative;
+        background-color: #121212;
         box-sizing: border-box;
-        float: right; 
-        width: 60%;
-        height: 120px;
+        float: right;
+        width: 50%;
+        height: 140px;
         text-align: left;
         padding-top: 10%;
+        margin: auto;
+        margin-bottom: 20px;
          
      }
 
-     .clearfloat {
-        background-color: #121212;
-     }
  
      .footerbox b, .footerbox p{
          font-variant: normal;
@@ -568,34 +570,45 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
          font-weight: 200;
          color: #f1f1f1;
          font-family: 'Oswald', sans-serif;
-         text-decoration: underline 1.5px #ff7e0c;
+         text-decoration: underline #ff7e0c;
+         text-underline-offset: 0.03em;
      }
 
     .footerlogoimg {
+        background-color: #121212;
         box-sizing: border-box;
         padding-top: 30px;
         float: left;
         position: relative;
-        width: 40%;
-        max-height: 120px;
+        width: 50%;
+        max-height: 140px;
+        margin-bottom: 20px;
     }
     
-    .list_float {
-        display: none;
-    }
+    
 
     ul.list_block_enable {
-        display: block;
-        padding-top: 0;
+        background-color: #121212;
+        color: #818181;
+        padding-top: 0px;
         height: auto;
         box-sizing: border-box;
+        display: block;
         width: 100%;
         background-color: #121212;
-        font-size: 12px;
+        border: 2px solid #121212;
+        font-size: 14px;
+    }
+
+    ul.list_block_enable p{
+        margin-bottom: 5px;
+        color: #818181;
     }
 
     .footer .links{
-        font-size:10px;
+        background-color: #121212;
+        font-size:12px;
+        color: #818181;
     }
 
     ul.follow {
@@ -610,14 +623,14 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
    
     .acknowledgement {
         position: sticky;
-        margin: 5px;
-        margin-top: -5px;
         padding: 0;
+        margin: 5px;
+        margin-top: 0;
+        margin-bottom: 20px;
         text-align: center;
         width: 100%;
-        max-height: 50px;
+        height: 50px;
         background-color: #121212;
-        float: left;
 
     }
 
