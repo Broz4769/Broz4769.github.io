@@ -992,12 +992,15 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
       }
 
 
+}/*End max-width: 720p */
+
+/*----------------------------------------------------------------------------- 
+XX - FIX Bulldog Image Home Screen VIEW 
+-----------------------------------------------------------------------------*/
 
 
 
-    }/*End max-width: 720p */
-
-@media (min-width:647px) and (max-width:1024px){
+@media (min-width:480px) and (max-width:1024px){
 
 .banner img {
         margin: auto;
