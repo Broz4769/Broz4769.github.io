@@ -892,6 +892,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         display: block;
         width: 100%;
         background-color: #121212;
+        border: 2px solid #121212;
         font-size: 14px;
     }
 
