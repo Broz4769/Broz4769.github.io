@@ -650,6 +650,18 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     }
     /*-----------------------Start SideNav CSS-------------------------*/
     /* The side navigation menu */
+    .headerlogo {
+        width: 100%;
+        height: auto;
+    }
+    
+    img.headerlogo {
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
     .sidenav {
         height: 100%; /* 100% Full-height */
         width: 0; /* 0 width - change this with JavaScript */
@@ -951,7 +963,6 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         display: none;
     }
 
-
     .Modalmenu {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -1054,6 +1065,18 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
 
     /*-----------------------Start SideNav CSS-------------------------*/
     /* The side navigation menu */
+    .headerlogo {
+        width: 300px;
+        height: auto;
+    }
+    
+    img.headerlogo {
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
     .sidenav {
         height: 100%; /* 100% Full-height */
         width: 0; /* 0 width - change this with JavaScript */
