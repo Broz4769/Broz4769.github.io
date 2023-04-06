@@ -1,4 +1,8 @@
-/* 1. Gallery */
+
+
+
+
+/* 2. Gallery */
 
 /// Get the modal
 var modal = document.getElementById('myModal');
