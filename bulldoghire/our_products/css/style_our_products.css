@@ -414,7 +414,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     }
 
     h2 {
-        display: none;
+        display: block;
         float: none;
         box-sizing: border-box;
         align-content: center;
@@ -450,6 +450,12 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         box-sizing: border-box;
         position: center;
         width: 100%;     
+    }
+
+    .banner, .Display {
+        display: block;
+        padding: 5px;
+        margin: auto;
     }
 
     .button {
