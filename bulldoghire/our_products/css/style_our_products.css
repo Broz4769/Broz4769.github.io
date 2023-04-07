@@ -466,12 +466,12 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         display: inline-block;
         padding: 10px;
         margin:  5px;
-        width: 80%;
+        width: 90%;
         border: 2px solid #121212;
         border-radius: 4px;
         box-sizing: border-box;
         font-family: 'Oswald', sans-serif;
-        font-size: 125%;
+        font-size: 115%;
         font-weight: 200;
       }
 
