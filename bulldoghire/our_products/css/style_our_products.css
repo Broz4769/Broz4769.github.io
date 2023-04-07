@@ -96,23 +96,6 @@ h2 {
 
 }
 
-h3 {
-
-    background-color: #fdfdfd;
-    color: yellow;
-    text-align: left;
-    width: 960px;
-    margin-top: -3px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-    padding-bottom: 0px;
-    font-size: 40px;
-    font-family: 'Oswald', sans-serif;
-    white-space: nowrap;
-    border: solid;
-    border-color: #ff7e0c;
-    border-width: 2px 0 0 0; 
-}
 
 .about_us {
     text-align: left;
@@ -343,6 +326,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
        background-color: #121212;
        width: 95%;
        height: 52px;
+       border-bottom: 3px solid #ff7e0c;
        
     }
 
@@ -394,10 +378,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         margin: auto;
         margin-left: 5px;
         padding: 0;
-        height: 84px;
+        height: 48px;
         background-color: #fdfdfd;
-        border-bottom: 3px solid #ff7e0c;
-        border-top: 3px solid #ff7e0c;
         
     }
 
@@ -421,11 +403,11 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         height: auto;
         margin: 0;
-        margin-top: 12px;
-        font-size: 200%;
+        margin-top: 3%;
+        font-size: 180%;
         font-weight: 300;
         color: #121212;
-        font-family: 'Oswald', sans-serif; 
+        font-family: 'Oswald', sans-serif;
         
     }
 
@@ -448,13 +430,17 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .product_categories {
         box-sizing: border-box;
         position: center;
-        width: 100%;     
+        width: 100%;
+        margin: 0;
+        padding-top: 10px;
+        border-top: 3px solid #ff7e0c; 
     }
 
     .banner, .Display {
         display: block;
         padding: 5px;
-        
+        padding-top: 0;
+    
     }
 
     .button {
@@ -471,7 +457,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         border-radius: 4px;
         box-sizing: border-box;
         font-family: 'Oswald', sans-serif;
-        font-size: 115%;
+        font-size: 110%;
         font-weight: 200;
       }
 
