@@ -391,7 +391,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         display: none;
         box-sizing: border-box;
         width: 100%;
-        margin: 0;
+        margin: auto;
         margin-left: 5px;
         padding: 0;
         height: 84px;
@@ -421,8 +421,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         width: 100%;
         height: auto;
         margin: 0;
-        margin-left: 5px;
-        margin-top: 14px;
+        margin-top: 12px;
         font-size: 200%;
         font-weight: 300;
         color: #121212;
@@ -455,7 +454,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     .banner, .Display {
         display: block;
         padding: 5px;
-        margin: auto;
+        
     }
 
     .button {
@@ -776,11 +775,6 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
 
     .buttonimg {
         width: 28px;
-        height: auto;
-    }
-
-    .buttonimg_e {
-        width: 34px;
         height: auto;
     }
 
