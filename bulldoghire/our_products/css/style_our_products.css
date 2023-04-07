@@ -476,6 +476,11 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
         font-weight: 200;
       }
 
+      .buttonimg {
+        width: 26px;
+        height: auto;
+    }
+
     .button:hover {
         background-color: #888;
         color: #121212;
@@ -767,7 +772,18 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
         font-size: 20px;
         font-weight: 200;
         
-      }
+    }
+
+    .buttonimg {
+        width: 28px;
+        height: auto;
+    }
+
+    .buttonimg_e {
+        width: 34px;
+        height: auto;
+    }
+
 
     .button:hover {
         background-color: #888;
