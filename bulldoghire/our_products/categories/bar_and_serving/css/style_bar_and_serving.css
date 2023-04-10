@@ -357,17 +357,16 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
   }
 
   .img__wrap_left img{
-      width: 56px;
-      height: 56px;
+      padding-left: 10px;
+      margin-top: 4px;
+      width: 46px;
+      height: 46px;
   }
 
-  .img__description {
-      font-size: 11px;
-      margin-top: 16px;
-      margin-left: 10px;
-
+  .img_img_desktop {
+    display: none;
   }
-
+  
   .social_links_FB img, .social_links_M img, .social_links_W{
       height: 38px;
       display: none;
@@ -453,44 +452,13 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     margin:  auto;
   }
 
-  .centeredtext {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: #121212;
-    font-size: 18px;
-    padding-left: 12%;
-    font-family: 'Oswald', sans-serif;
-  }
-
-  .backbox {
-    box-sizing: border-box;
-    text-align: center;
-    width: 60px;
-    height: 10px;
-    margin: 0;
-    padding-left: 0px;
-    display:  block;
-    
-  }
-
-  .backbox img {
-    color: black;
-    text-decoration: none;
-    width: 60px;
-  
-  }
-
-  .mybackImg:hover {
-    opacity: 0.5;
-  }
-
   /*Scroll Up Style*/
 
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 20px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -521,7 +489,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     object-fit: fit;
     cursor: pointer;
     transition: 0.3s;
-    margin-left:  35px; /*Must be the same as Margin-Left .backbox img*/
+    margin: 0;
     margin-top: 10px;
     border: 2px solid #121212; /* dark/black colour rgba(18, 18, 18, 1) */
     border-radius: 4px;
@@ -529,6 +497,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     padding: 0px;
     width: 75%;
     height: auto;
+    
   }
 
   .myImg:hover {opacity: 0.7;}
@@ -799,16 +768,15 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
   }
 
   .img__wrap_left img{
-      width: 70px;
-      height: 70px;
-  }
+    padding-left: 10px;
+    margin-top: 4px;
+    width: 60px;
+    height: 60px;
+}
 
-  .img__description {
-      font-size: 12px;
-      margin-top: 21px;
-      margin-left: 17px;
-
-  }
+  .img_img_mobile {
+    display: none;
+}
 
   .social_links_FB img, .social_links_M img, .social_links_W img{
       height: 40px;
@@ -879,29 +847,6 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     font-family: 'Oswald', sans-serif;
   }
 
-  .backbox {
-    float: left;
-    box-sizing: border-box;
-    text-align: center;
-    width: 250px;
-    height: 180px;
-    display:  block;
-    margin-left:  35px; /*Must be the same as Margin-Left .myImg*/
-    margin-top: 10px;
-  }
-
-  .backbox img {
-    color: black;
-    text-decoration: none;
-    width: 110px;
-    padding-top: 12%;
-    padding-left: 40%;
-  
-  }
-
-  .mybackImg:hover {
-    opacity: 0.7;
-  }
 
   /*Scroll Up Style*/
 
