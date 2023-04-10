@@ -366,8 +366,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     #container {
         width: 95%;
         position: center;
-        margin:  0 auto 0 auto;
-        margin-left: 5px;
+        margin:  0;
+        margin-right: 5px;
         height: auto;
     }
     
