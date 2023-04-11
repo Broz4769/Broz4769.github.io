@@ -413,20 +413,20 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
   }
 
   h2 {
-      display: block;
-      float: none;
-      box-sizing: border-box;
-      align-content: center;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      margin-top: 3%;
-      font-size: 180%;
-      font-weight: 300;
-      color: #121212;
-      font-family: 'Oswald', sans-serif;
-      
-  }
+    display: block;
+    float: none;
+    box-sizing: border-box;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 5%;
+    font-size: 160%;
+    font-weight: 300;
+    color: #121212;
+    font-family: 'Oswald', sans-serif;
+    
+  }   
 
   .clearfloat {
       height: 0px;
@@ -451,6 +451,13 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     display: block;
     margin:  auto;
   }
+
+  .banner, .Display {
+    display: block;
+    padding: 5px;
+    padding-top: 0;
+
+}
 
   /*Scroll Up Style*/
 
@@ -495,8 +502,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     border-radius: 4px;
     box-sizing: border-box;
     padding: 0px;
-    width: 75%;
-    height: auto;
+    width: 40%;
+    height: 120px;
     
   }
 
@@ -808,12 +815,13 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
   .clearfloat {
       position: relative;
       width: 1280px;
+      height: 0px;
   }
 
   h2 {
       margin-top: 80px;
       margin-left: 100px;
-      font-size: 68px;
+      font-size: 60px;
       width: auto;
 
   }
