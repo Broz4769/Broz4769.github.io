@@ -428,6 +428,10 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     
   }   
 
+  h2 p {
+    font-size: 16px;
+  }
+
   .clearfloat {
       height: 0px;
   }
@@ -820,11 +824,14 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
 
   h2 {
       margin-top: 80px;
-      margin-left: 100px;
-      font-size: 60px;
+      margin-left: 200px;
+      font-size: 68px;
       width: auto;
-
   }
+
+    h2 p {
+      font-size: 34px;
+    }
 
   .contentbox {
       position: relative;
