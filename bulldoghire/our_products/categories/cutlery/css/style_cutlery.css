@@ -894,8 +894,8 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     border-radius: 4px;
     box-sizing: border-box;
     padding: 0px;
-    width: 250px;
-    height: 180px;
+    width: 180px;
+    height: 300px;
   }
 
   .myImg:hover {opacity: 0.7;}
@@ -919,8 +919,8 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 360px;
+    max-width: 600px;
   }
 
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
