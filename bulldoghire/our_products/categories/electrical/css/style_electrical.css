@@ -532,6 +532,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
   .modal-content {
     margin: auto;
     display: block;
+    margin-bottom: 100px;
+    object-fit: fit;
     width: 90%;
     height: auto;
   }
@@ -921,6 +923,8 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
   .modal-content {
     margin: auto;
     display: block;
+    margin-bottom: 100px;
+    object-fit: fit;
     width: 90%;
     max-width: 700px;
   }

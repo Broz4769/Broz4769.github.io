@@ -507,7 +507,7 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     box-sizing: border-box;
     padding: 0px;
     width: 30%;
-    height: 200px;
+    height: 220px;
     
   }
 
@@ -532,6 +532,8 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
   .modal-content {
     margin: auto;
     display: block;
+    margin-bottom: 100px;
+    object-fit: fit;
     width: 65%;
     height: auto;
   }
@@ -920,6 +922,8 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
   .modal-content {
     margin: auto;
     display: block;
+    margin-bottom: 100px;
+    object-fit: fit;
     width: 360px;
     max-width: 600px;
   }
