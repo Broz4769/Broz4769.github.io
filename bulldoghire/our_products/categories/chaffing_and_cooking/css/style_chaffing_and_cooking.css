@@ -543,9 +543,10 @@ XX - RESPONSIVE DESIGN MOBILE VIEW
     width: 90%;
     text-align: center;
     font-size: 24px;
-    color: #ccc;
-    padding: 10px 0;
+    color: #f1f1f1;
+    padding: 0 0 10px 0;
     height: auto;
+    background-color: rgba(0, 0, 0, 0.025);
   }
 
   /* Add Animation - Zoom in the Modal */
@@ -930,10 +931,11 @@ XX - RESPONSIVE DESIGN DESKTOP VIEW
     width: 80%;
     max-width: 700px;
     text-align: center;
-    font-size: 24px;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    font-size: 34px;
+    color: #f1f1f1;
+    padding: 0 0 16px 0;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.025);
   }
 
   /* Add Animation - Zoom in the Modal */
